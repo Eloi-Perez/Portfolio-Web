@@ -45,13 +45,17 @@ h3 {
     font-weight: 500;
 }
 
+.font-small {
+    font-size: 12px;
+}
+
 a {
     color: var(--primary-color);
-  }
+}
 
 a:visited {
     color: var(--primary-color);
- }
+}
 
 a:hover, a:focus {
     text-decoration: none;
@@ -60,7 +64,6 @@ a:hover, a:focus {
   
 a:active {
     color: var(--secondary-color);
-    /* color: #489c79; */
 }
 
 /* Contact Form */
@@ -74,7 +77,7 @@ button {
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  }
+}
 
 button:hover, button:focus {
     cursor: pointer;
@@ -96,7 +99,7 @@ button:hover, button:focus {
 }
 
 .svg-logo {
-    fill: white; /* only works on <svg> no <img> */
+    fill: white;
 }
 
 a .svg-logo:hover {
@@ -121,25 +124,20 @@ a .svg-logo:hover {
 }
   
 button:hover, button:focus, .button:hover, .button:focus {
-    /* lets the mouse appear as a hand when hovering over the button */
     cursor: pointer;
-    /* reduces the opacity of the button to 80% */
     opacity: 0.8;
 }
 
-
-
 /* Borders */
-
 * {
     box-sizing: border-box;
 }
 
-div { /* ----------------------> Remove in Production */
-    /* padding: 10px;
-    margin: 10px; */
+/* div {
+    padding: 10px;
+    margin: 10px;
     border: 1px solid white; 
-}
+} */
 
 /* Flex Menu */
 .page-header {
@@ -163,6 +161,21 @@ div { /* ----------------------> Remove in Production */
 }
 
 /* Flex index About Footer */
+
+.body-flex {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.main-flex {
+    flex:1;
+
+}
+.foot{
+
+}
+
+
 
 .center-flexbox {
     clear: both;
@@ -202,7 +215,7 @@ div { /* ----------------------> Remove in Production */
 .project-list__item {
     display: inline-block;
     width: 33%;
-   }
+}
    /* end grid fallback */
 
 
@@ -257,7 +270,7 @@ div { /* ----------------------> Remove in Production */
     h2{
         font-size: 20px;
     }
-  }
+}
 
 
 /* About */
@@ -280,7 +293,7 @@ div { /* ----------------------> Remove in Production */
 
 .sun {
     animation: 4s color-change infinite alternate linear;
-  }
+}
 
 @keyframes cloud-move {
     from {

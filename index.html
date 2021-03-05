@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
-<body>
+<body class="body-flex">
     <!-- Menu/Header -->
     <header class="page-header">
         <svg id="logo" class="svg-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 86" enable-background="new 0 0 400 86" xml:space="preserve" height="43px"><title>Logo</title>
@@ -43,27 +43,29 @@
                 
             </ul>
         </nav>
-    </header>
+    </header><br>
 
     <!-- Main -->
-    <main class="center-flexbox">
-        <div class="center-flexbox__item profile">
-            <img src="img/me.jpg" class="profile__portrait" alt="A photograph of me">
-            <h1>Hello World!</h1>
-            <p>My name is Eloi Perez. I am a <span>web</span> developer from Spain, now based in Manchester.</p>
-            <a href="work.html">Check out some of my code</a>
+    <main class="main-flex">
+        <div class="center-flexbox">
+            <div class="center-flexbox__item profile">
+                <img src="img/me.jpg" class="profile__portrait" alt="A photograph of me">
+                <h1>Hello World!</h1>
+                <p>My name is Eloi Perez. I am a <span>web</span> developer from Spain, now based in Manchester.</p>
+                <a href="work.html">Check out some of my code</a>
+            </div>
+            <!-- <div>
+                <a href="asfasdf">Default Link</a>
+                <button type="button">Default Button</button>
+                <button class="button__secondary">Secondary Button</button>
+            </div> -->
         </div>
-        <!-- <div>
-            <a href="asfasdf">Default Link</a>
-            <button type="button">Default Button</button>
-            <button class="button__secondary">Secondary Button</button>
-        </div> -->
     </main>
 
     <!-- Footer -->
-    <footer class="page-footer center-flexbox">
+    <footer class="center-flexbox">
         <p>Find me on:</p>
-        <div class="social-media">
+        <div>
             <!-- Github logo -->
             <a href="https://github.com/Eloi-Perez" target="_blank">
             <svg class="svg-logo" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="30px" height="30px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

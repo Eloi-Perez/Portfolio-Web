@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
 </head>
-<body>
+<body class="body-flex">
     <!-- Menu -->
     <header class="page-header">
         <svg id="logo" class="svg-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 86" enable-background="new 0 0 400 86" xml:space="preserve" height="43px"><title>Logo</title>
@@ -44,37 +44,37 @@
             
             </ul>
         </nav>
-    </header>
+    </header><br>
 
     <!-- Main -->
-    <main>
-        <div>
-            Tel: <a href="tel:+447541987199">+44(0)7541987199</a><br>
-            Email: <a href="mailto:eloi104@hotmail.com">eloi104 (at) hotmail.com</a><br>
-            <a href="mailto:eloi104@hotmail.com">Contact me</a>
-        </div>
-        <div>
-            <form action="" method="post" id="contact-form">
-                <label class="standard-label" for="contact-email">E-mail*: </label>
-                <input type="email" id="contact-email" required>
-              
-                <label class="standard-label" for="contact-telephone">Telephone: </label>
-                <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx">
-              
-                <label class="standard-label" for="contact-textarea">Message*: </label>
-                <textarea id="contact-textarea" maxlength="240" placeholder="Write here your message" required></textarea>
-              
-                <input type="submit" value="Send message">
-            </form>
-            <p>*Required</p>
+    <main class="main-flex">
+        <div class="center-flexbox">
+            <div class="center-flexbox__item">
+                Tel: <a href="tel:+447541987199">+44(0)7541987199</a><br>
+                Email: <a href="mailto:eloi104@hotmail.com">eloi104 (at) hotmail.com</a>
+            </div><br>
+            <div class="center-flexbox__item">
+                <form action="" method="post" id="contact-form">
+                    <label class="standard-label" for="contact-email">E-mail*: </label>
+                    <input type="email" id="contact-email" required>
+                
+                    <label class="standard-label" for="contact-telephone">Telephone: </label>
+                    <input type="tel" id="contact-telephone"><br><br>
+                
+                    <label class="standard-label" for="contact-textarea">Message*: </label>
+                    <textarea id="contact-textarea" maxlength="240" placeholder="Write here your message" required></textarea>
+                
+                    <input type="submit" value="Send message">
+                </form>
+                <p class="font-small">&nbsp;*Required</p>
+            </div>
         </div>
     </main>
-    <hr>
 
     <!-- Footer -->
-    <footer class="page-footer center-flexbox">
+    <footer class="center-flexbox foot">
         <p>Find me on:</p>
-        <div class="social-media">
+        <div>
             <!-- Github logo -->
             <a href="https://github.com/Eloi-Perez" target="_blank">
             <svg class="svg-logo" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="30px" height="30px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
