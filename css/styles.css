@@ -179,6 +179,9 @@ button:active, .button:active {
     max-width: 700px;
     margin: 0 auto;
 }
+.center-flexbox__item-city {
+    margin: 0 auto;
+}
 
 .profile {
     height: auto; /* does anything? */
@@ -270,11 +273,13 @@ button:active, .button:active {
 
 /* About */
 
-
+.city-svg {
+    opacity: 80%;
+}
 
 /*Animation Example .sun .cloud-front .cloud-back */
 
-@keyframes color-change {
+/* @keyframes color-change {
     0% {
       fill: #edc655;
     }
@@ -288,22 +293,22 @@ button:active, .button:active {
 
 .sun {
     animation: 4s color-change infinite alternate linear;
-}
+} */
 
-@keyframes cloud-move {
+@keyframes line-move {
     from {
-      transform: translate(0, 50px);
+        transform: translate(-40%, 0%);
     }
     to {
-      transform: translate(200px, 50px);
+        transform: translate(100%, 0%);
     }
 }
 
-.cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
+.city-lines {
+    animation: 16s line-move infinite alternate linear;
 }
 
-@keyframes cloud-move-reverse {
+/* @keyframes cloud-move-reverse {
     from {
       transform: translate(446px, 48px);
     }
@@ -314,4 +319,4 @@ button:active, .button:active {
 
 .cloud-back {
     animation: 34s cloud-move-reverse infinite alternate linear;
-}
+} */
