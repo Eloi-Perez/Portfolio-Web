@@ -87,6 +87,10 @@ button:hover, button:focus {
     color: var(--dark-grey);
 }
 
+#contact-textarea{
+    width: 100%;
+}
+
 /* Nav */
 .navigation-list {
     list-style-type: none;
