@@ -167,15 +167,13 @@ button:hover, button:focus, .button:hover, .button:focus {
     min-height: 100vh;
     flex-direction: column;
 }
+
 .main-flex {
-    flex:1;
-
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.foot{
-
-}
-
-
 
 .center-flexbox {
     clear: both;
