@@ -1,9 +1,4 @@
 /*
-Colours used
-Text Colour (Dark Gray): #2b2b2b;
-Primary Colour (Purple): #357b70;
-Secondary Colour (Orange): #e0b354;
-
 Fonts
 font-family: 'Roboto Mono', monospace;
 font-family: 'Domine', serif;
@@ -15,6 +10,10 @@ font-family: 'Domine', serif;
     --dark-grey: #2b2b2b;
     --font-color: #E6E6E6;
     --font-color2: #fff;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -68,7 +67,6 @@ a:active {
 
 /* Contact Form */
 button {
-    /* overwrites browser defaults and resets the border */
     border: none;
     font-family: inherit;
     background-color: var(--primary-color);
@@ -124,20 +122,15 @@ a .svg-logo:hover {
 }
   
 button:hover, button:focus, .button:hover, .button:focus {
+    color: var(--font-color2);
     cursor: pointer;
     opacity: 0.8;
 }
 
-/* Borders */
-* {
-    box-sizing: border-box;
+button:active, .button:active {
+    background-color: var(--secondary-color);
+    opacity: 1;
 }
-
-/* div {
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid white; 
-} */
 
 /* Flex Menu */
 .page-header {
