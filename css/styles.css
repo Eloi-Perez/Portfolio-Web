@@ -217,7 +217,7 @@ button:active, .button:active {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
             /* for grid fallback */
-        margin: 0;
+        margin: 20px;
     }
 }
 
@@ -227,16 +227,20 @@ button:active, .button:active {
 }
 
 .project-list__item {
-    background-color: black;/* ----------------------> Change */
+    background-color: rgba(255, 255, 255, 0.1);
         /* for grid fallback */
     width: auto;        
     min-height: auto;
-    margin: 0;
+    padding: 10px;
 }
 
 @media all and (max-width: 500px) {
     .project-list {
         grid-template-columns: 1fr;
+        margin: 0;
+    }
+    .project-list__item {
+        padding: 5px;
     }
 }
 
