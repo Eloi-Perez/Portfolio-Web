@@ -304,10 +304,10 @@ button:active, .button:active {
 }
 
 @media all and (max-width: 720px) {
+    .center-flexbox {
+        overflow-x: hidden; /* for city SVG */
+    }
     .center-flexbox__item{
         max-width: 100vw;
-    }
-    .center-flexbox {
-        overflow-x: hidden;
     }
 }
