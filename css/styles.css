@@ -280,6 +280,12 @@ button:active, .button:active {
     }
 }
 
+@media all and (max-width: 564px) {
+    .navigation-list li {
+        display: inherit;
+    }
+}
+
 @media all and (min-width: 500px) and (max-width: 720px) {
     .project-list {
         grid-template-columns: 1fr 1fr;
@@ -287,27 +293,25 @@ button:active, .button:active {
 }
 
 @media all and (max-width: 720px){
-    /* shared media code */
-    .project-list {
-        grid-gap: 10px;
-    }
-    .project-list__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-    }
     h1 {
         font-size: 22px;
     }
     h2{
         font-size: 20px;
     }
-}
 
-@media all and (max-width: 720px) {
     .center-flexbox {
         overflow-x: hidden; /* for city SVG */
     }
     .center-flexbox__item{
         max-width: 100vw;
+    }
+
+    .project-list {
+        grid-gap: 10px;
+    }
+    .project-list__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
     }
 }
