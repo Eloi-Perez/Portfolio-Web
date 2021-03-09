@@ -251,7 +251,7 @@ button:active, .button:active {
 /* About */
 
 #city-svg {
-    width: 100vh;
+    width: 100vh; /* Why works?*/
     opacity: 80%;
 }
 
@@ -321,5 +321,8 @@ button:active, .button:active {
     .project-list__item:last-child {
         grid-column: auto / auto;
         grid-row: auto / auto;
+    }
+    #city-svg {
+        width: 100vw; /* ? or overflow*/
     }
 }
