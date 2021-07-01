@@ -60,13 +60,13 @@ a:hover, a:focus {
     text-decoration: none;
     color: var(--primary-color);
 }
-  
+
 a:active {
     color: var(--secondary-color);
 }
 
-
 /* Contact Form */
+
 button {
     border: none;
     font-family: inherit;
@@ -84,16 +84,16 @@ button:hover, button:focus {
 }
 
 .button__secondary {
-    background-color:  var(--secondary-color);
+    background-color: var(--secondary-color);
     color: var(--dark-grey);
 }
 
-#contact-textarea{
+#contact-textarea {
     width: 100%;
 }
 
-
 /* Nav */
+
 .navigation-list {
     list-style-type: none;
 }
@@ -104,14 +104,33 @@ button:hover, button:focus {
 
 .svg-logo {
     fill: white;
+    fill-opacity: 1;
 }
 
-a .svg-logo:hover {
+.svg-logo:hover path {
+    stroke: white;
+    stroke-width: 3;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: drawLogo 2.5s forwards;
+    fill-opacity: 0;
+}
+
+@keyframes drawLogo {
+    from {
+        stroke-dashoffset: 1;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* a .svg-logo:hover {
     fill: black;
-}
-
+} */
 
 /* About Button + Form Button */
+
 .button, button {
     /* overwrites browser defaults and border */
     border: none;
@@ -125,9 +144,10 @@ a .svg-logo:hover {
     border-radius: 3px;
     /* width of the border, type, color */
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    transition: opacity 0.2s; /* property duration timing-function delay */
+    transition: opacity 0.2s;
+    /* property duration timing-function delay */
 }
-  
+
 button:hover, button:focus, .button:hover, .button:focus {
     color: var(--font-color2);
     cursor: pointer;
@@ -139,15 +159,15 @@ button:active, .button:active {
     opacity: 1;
 }
 
-
 /* Flex Menu */
+
 .page-header {
     display: flex;
     width: 100%;
     padding: 20px;
 }
 
-.page-header__item  {
+.page-header__item {
     flex: 0 1 200px;
 }
 
@@ -160,7 +180,6 @@ button:active, .button:active {
     display: inline-block;
     margin-left: 15px;
 }
-
 
 /* Flex index About Footer */
 
@@ -184,7 +203,7 @@ button:active, .button:active {
     text-align: center;
 }
 
-.center-flexbox__item{
+.center-flexbox__item {
     max-width: 700px;
     margin: 0 auto;
 }
@@ -198,7 +217,8 @@ button:active, .button:active {
 }
 
 .profile {
-    height: auto; /* does anything? */
+    height: auto;
+    /* does anything? */
     min-height: 250px;
 }
 
@@ -212,13 +232,14 @@ button:active, .button:active {
 
 /* Grid Work*/
 
-    /* start grid fallback */
+/* start grid fallback */
+
 .project-list__item {
     display: inline-block;
     width: 33%;
 }
-   /* end grid fallback */
 
+/* end grid fallback */
 
 @supports (display: grid) {
     .project-list {
@@ -226,7 +247,7 @@ button:active, .button:active {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
-            /* for grid fallback */
+        /* for grid fallback */
         margin: 20px;
     }
 }
@@ -238,8 +259,8 @@ button:active, .button:active {
 
 .project-list__item {
     background-color: rgba(255, 255, 255, 0.02);
-        /* for grid fallback */
-    width: auto;        
+    /* for grid fallback */
+    width: auto;
     min-height: auto;
     padding: 10px;
 }
@@ -251,11 +272,12 @@ button:active, .button:active {
 /* About */
 
 #city-svg {
-    width: 100vh; /* Why works?*/
+    width: 100vh;
+    /* Why works?*/
     opacity: 80%;
 }
 
-    /* animation */
+/* animation */
 
 @keyframes line-move {
     from {
@@ -278,7 +300,6 @@ button:active, .button:active {
         width: 60vw;
         margin: 0 auto;
     }
-    
     .project-list {
         grid-template-columns: 1fr;
         margin: 0;
@@ -300,21 +321,20 @@ button:active, .button:active {
     }
 }
 
-@media all and (max-width: 720px){
+@media all and (max-width: 720px) {
     h1 {
         font-size: 22px;
     }
-    h2{
+    h2 {
         font-size: 20px;
     }
-
     .center-flexbox {
-        overflow-x: hidden; /* for city SVG */
+        overflow-x: hidden;
+        /* for city SVG */
     }
-    .center-flexbox__item{
+    .center-flexbox__item {
         max-width: 100vw;
     }
-
     .project-list {
         grid-gap: 10px;
     }
@@ -323,6 +343,7 @@ button:active, .button:active {
         grid-row: auto / auto;
     }
     #city-svg {
-        width: 100vw; /* ? or overflow*/
+        width: 100vw;
+        /* ? or overflow*/
     }
 }
