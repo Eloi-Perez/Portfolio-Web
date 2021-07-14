@@ -125,9 +125,14 @@ button:hover, button:focus {
     }
 }
 
-/* a .svg-logo:hover {
+
+.svg-footer {
+    fill: white;
+}
+
+.svg-footer:hover {
     fill: black;
-} */
+}
 
 /* About Button + Form Button */
 
