@@ -10,7 +10,8 @@ font-family: 'Domine', serif;
     --dark-grey: #2b2b2b;
     --font-color: #E6E6E6;
     --font-color2: #fff;
-    --font-color3: rgb(17, 71, 221);
+    --font-color3: rgb(30, 90, 255);
+    --font-color3-35: rgb(30, 90, 255, 0.35);
 }
 
 * {
@@ -316,7 +317,7 @@ button:active, .button:active {
 } */
 
 .hover_link {
-    background: rgba(17, 71, 221, 0.35);
+    background: var(--font-color3-35);
 }
 
 /* background eloi-link */
