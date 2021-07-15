@@ -92,6 +92,21 @@ button:hover, button:focus {
     width: 100%;
 }
 
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 20px;
+}
+
+.contact-form:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* About*/
+
+.skills th {
+    padding: 0 50px;
+}
+
 /* Nav */
 
 .navigation-list {
@@ -124,7 +139,6 @@ button:hover, button:focus {
         stroke-dashoffset: 0;
     }
 }
-
 
 .svg-footer {
     fill: white;
@@ -221,6 +235,10 @@ button:active, .button:active {
     text-align: center;
 }
 
+.center-flexbox__item__left {
+    text-align: left;
+}
+
 .profile {
     height: auto;
     /* does anything? */
@@ -273,6 +291,49 @@ button:active, .button:active {
 .project-list__item:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
+
+.project-list__item h2 a {
+    color: rgb(17, 71, 221);
+    text-decoration: none;
+}
+
+/* #link_api:hover {
+    background: red;
+} */
+
+/* #red a:hover ~ #hola {
+    background: red;
+} */
+
+.hover_link {
+    background: rgba(17, 71, 221, 0.35);
+}
+
+/* background eloi-link */
+
+/* .eloilink {
+    position: relative;
+    overflow: hidden;
+}
+
+.eloilink:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: url('../img/urlshortener.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.eloilink__div2 {
+    position: relative;
+} */
 
 /* About */
 

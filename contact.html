@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css"> <!-- Delete -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> Delete -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30491006-1"></script>
@@ -59,27 +59,28 @@
 
     <!-- Main -->
     <main class="main-flex">
-        <div class="center-flexbox">
-            <div class="center-flexbox__item">
-                Tel: <a href="tel:+447541987199">+44(0)7541987199</a><br>
-                Email: <a href="mailto:eloi104@hotmail.com">eloi104 (at) hotmail.com</a>
-            </div><br>
-            <div class="center-flexbox__item">
-                <form action="!" method="post" id="contact-form">
-                    <label class="standard-label" for="contact-email">E-mail*: </label>
-                    <input type="email" id="contact-email" required>
+        <div class="center-flexbox center-flexbox__item__left">
+            <p>Contact me by:</p>
+            <ul>
+                <li>Tel: <a href="tel:+447541987199">+44(0)7541987199</a></li>
+                <li>Email: <a href="mailto:eloi104@hotmail.com">eloi104 (at) hotmail.com</a></li>
+                <li>Web form:</li>
+                <div class="contact-form">
+                    <form action="!" method="post" id="contact-form">
+                        <label class="standard-label" for="contact-email">E-mail*: </label>
+                        <input type="email" id="contact-email" required>
 
-                    <label class="standard-label" for="contact-telephone">Telephone: </label>
-                    <input type="tel" id="contact-telephone"><br><br>
+                        <label class="standard-label" for="contact-telephone">Telephone: </label>
+                        <input type="tel" id="contact-telephone"><br><br>
 
-                    <label class="standard-label" for="contact-textarea">Message*: </label>
-                    <textarea id="contact-textarea" maxlength="240" placeholder="Write here your message"
-                        required></textarea><br>
-                    <input type="submit" value="Send message" class="button">
-                    <!-- <span class="font-small">*Required</span> -->
-                </form>
-
-            </div>
+                        <label class="standard-label" for="contact-textarea">Message*: </label>
+                        <textarea id="contact-textarea" maxlength="240" placeholder="Write here your message"
+                            required></textarea><br>
+                        <input type="submit" value="Send message" class="button">
+                        <!-- <span class="font-small">*Required</span> -->
+                    </form>
+                </div>
+            </ul>
         </div>
     </main>
 
