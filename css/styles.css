@@ -10,6 +10,7 @@ font-family: 'Domine', serif;
     --dark-grey: #2b2b2b;
     --font-color: #E6E6E6;
     --font-color2: #fff;
+    --font-color3: rgb(17, 71, 221);
 }
 
 * {
@@ -22,6 +23,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
+    /* letter-spacing: .07em; */
     color: var(--font-color);
 }
 
@@ -99,6 +101,14 @@ button:hover, button:focus {
 
 .contact-form:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.submitted {
+    color: var(--font-color3);
+}
+
+.hidden {
+    display: none;
 }
 
 /* About*/
@@ -293,7 +303,7 @@ button:active, .button:active {
 }
 
 .project-list__item h2 a {
-    color: rgb(17, 71, 221);
+    color: var(--font-color3);
     text-decoration: none;
 }
 

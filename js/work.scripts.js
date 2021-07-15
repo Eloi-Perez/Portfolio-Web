@@ -1,4 +1,3 @@
-// Work page
 const link_to_api = document.querySelector('#link_to_api');
 const link_to_client = document.querySelector('#link_to_client');
 const film_api = document.querySelector('#Film_API');

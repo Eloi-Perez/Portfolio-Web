@@ -66,18 +66,26 @@
                 <li>Email: <a href="mailto:eloi104@hotmail.com">eloi104 (at) hotmail.com</a></li>
                 <li>Web form:</li>
                 <div class="contact-form">
-                    <form action="!" method="post" id="contact-form">
+                    <form action="https://api.staticforms.xyz/submit" method="post" id="contact-form">
+
                         <label class="standard-label" for="contact-email">E-mail*: </label>
-                        <input type="email" id="contact-email" required>
+                        <input type="email" id="contact-email" name="email" required>
 
                         <label class="standard-label" for="contact-telephone">Telephone: </label>
-                        <input type="tel" id="contact-telephone"><br><br>
+                        <input type="tel" id="contact-telephone" name="telephone"><br><br>
 
                         <label class="standard-label" for="contact-textarea">Message*: </label>
                         <textarea id="contact-textarea" maxlength="240" placeholder="Write here your message"
-                            required></textarea><br>
+                            name="message" required></textarea><br>
+
+                        <input type="hidden" name="accessKey" value="08d58d3a-1469-4ad7-9433-0f1335639f4f">
+                        <input type="hidden" name="redirectTo"
+                            value="https://eloiperez.com/development/contact.html#submitted">
+                        <input type="text" name="honeypot" style="display:none">
+
                         <input type="submit" value="Send message" class="button">
                         <!-- <span class="font-small">*Required</span> -->
+                        <span class="submitted hidden">Thank you for you message!</span>
                     </form>
                 </div>
             </ul>
@@ -126,7 +134,7 @@
                 </svg></a>
         </div>
     </footer>
-
+    <script src="js/about.scripts.js"></script>
 </body>
 
 </html>
