@@ -286,10 +286,10 @@ button:active, .button:active {
     }
 }
 
-.project-list__item:last-child {
+/* .project-list__item:last-child {
     grid-column: 3 / 3;
     grid-row: 1 / 3;
-}
+} */
 
 .project-list__item {
     background-color: rgba(255, 255, 255, 0.02);

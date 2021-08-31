@@ -11,10 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
     <link rel="stylesheet" type="text/css" href="../normalize.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> Delete -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30491006-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -64,55 +64,95 @@
             <h1>Work</h1>
 
             <div class="project-list">
-                <div class="project-list__item" id="Film_Client">
-                    <h2><a href="https://movie-client2.netlify.app/">Time Travel Films Database</a></h2>
-                    <p>A films database where you can register to show your favourite time travel films and score the
-                        films.</p>
-                    <p>Buildt with React, using Hooks, Redux for the state management, React-Router for the
-                        navigation and Bootstrap for the UI.</p>
-                    <p>It's powered by my own <a href="#Film_API" id="link_to_api">Time Travel Films API</a>.</p>
-                    <p>Hosted on Netlify.</p>
-                    <a href="https://github.com/Eloi-Perez/movie_client">See project on GitHub</a>
+                <div class="project-list__item">
+                    <h2>Meet App</h2>
+                    <p>A Progressive Web Application to show all the events in a calendar.</p>
+                    <p><a href="#">MORE INFO</a></p>
+                    <img src="img/react_logo.svg" height="60em" title="React">
+                    <img src="img/google_cloud_logo.svg" height="60em" title="Google API">
+                    <img src="img/aws_logo.svg" height="50em" title="AWS Lambda">&nbsp;
+                    <img src="img/pwa_logo.svg" height="40em" title="Progressive Web Application">&nbsp;
+                    <img src="img/jest_logo.svg" height="60em" title="JestJS">
+                    <img src="img/puppeteer_logo.svg" height="60em" title="Puppeteer">
+                    <p><a href="https://github.com/Eloi-Perez/meet" target="_blank">See project on GitHub</a></p>
+                </div>
+                <div class="project-list__item">
+                    <h2>Chat App</h2>
+                    <p>A React Native mobile application that give users the oportunity to chat, share pictures and
+                        location.</p>
+                    <p><a href="#">MORE INFO</a></p>
+                    <img src="img/react_logo.svg" height="60em" title="React Native">&nbsp;
+                    <img src="img/expo_logo.svg" height="60em" title="Expo">&nbsp;
+                    <img src="img/firebase_logo.svg" height="60em" title="Google Firebase">
+                    <p><a href="https://github.com/Eloi-Perez/chat-app" target="_blank">See project on GitHub</a></p>
                 </div>
                 <div class="project-list__item eloilink">
                     <div class="eloilink__div2">
-                        <h2><a href="https://eloi.link">eloi.link</a></h2>
+                        <h2>eloi.link</h2>
                         <p>An easy to use and fast URL shortener.</p>
-                        <p>Build with express (in Node.js) using Mongoose for the database, NanoID for the random URL
-                            generation and Qrcode to display the shortlink as a QR code.</p>
-                        <p>The response HTML is generated dynamically in Node, using plain JS.</p>
-                        <!-- <iframe title="Inline Frame" width="300" height="300" src="https://eloi.link"></iframe> -->
-                        <!-- <img src="img/urlshortener.png"> -->
-                        <p>The site is hosted on a cPanel hosting and the database on the official MongoDB servers.</p>
-                        <a href="https://github.com/Eloi-Perez/eloi.link">See project on GitHub</a>
+                        <p><a href="#">MORE INFO</a></p>
+                        <img src="img/nodejs_logo.svg" height="60em" title="Node.js">&nbsp;
+                        <img src="img/mongodb_logo.svg" height="50em" title="MongoDB">
+                        <p><a href="https://github.com/Eloi-Perez/eloi.link" target="_blank">See project on GitHub</a>
+                        </p>
                     </div>
                 </div>
+                <div class="project-list__item Film_Client">
+                    <h2>Time Travel Films Database</h2>
+                    <p>A films database where you can register to show your favourite time travel films and score the
+                        films.</p>
+                    <p><a href="#">MORE INFO</a></p>
+                    <p>It's powered by my own <a href="#Film_API" class="link_to_api">Time Travel Films API</a>.</p>
+                    <img src="img/react_logo.svg" height="60em" title="React">
+                    <img src="img/redux_logo.svg" height="60em" title="Redux">
+                    <img src="img/bootstrap_logo.svg" height="60em" title="React Bootstrap">
+                    <p><a href="https://github.com/Eloi-Perez/movie_client" target="_blank">See project on GitHub</a>
+                    </p>
+                </div>
                 <div class="project-list__item" id="Film_API">
-                    <h2><a href="https://movie-api2.herokuapp.com/">Time Travel Films API</a></h2>
+                    <h2>Time Travel Films API</h2>
                     <p>API for the <a href="#Film_Client" id="link_to_client">Time Travel Films Database</a> website.
                     </p>
-                    <p>Node.js project with Express, using Passport and Bcrypt for the login system and powered by
-                        MongoDB database using Mongoose.</p>
-                    <p>Hosted on Heroku.</p>
-                    <a href="https://github.com/Eloi-Perez/movie_api">See project on GitHub</a>
+                    <p><a href="#">MORE INFO</a></p>
+                    <img src="img/nodejs_logo.svg" height="60em" title="Node.js">&nbsp;
+                    <img src="img/mongodb_logo.svg" height="50em" title="MongoDB">&nbsp;
+                    <img src="img/passport_logo.svg" height="50em" title="Passport.js">&nbsp;
+                    <img src="img/swagger_logo.svg" height="50em" title="Swagger UI">
+                    <p><a href="https://github.com/Eloi-Perez/movie_api" target="_blank">See project on GitHub</a></p>
+                </div>
+
+
+                <div class="project-list__item Film_Client">
+                    <h2>Films Database (Angular version)</h2>
+                    <p>A films database where you can register to show your favourite time travel films and score the
+                        films.</p>
+                    <p><a href="#">MORE INFO</a></p>
+                    <p>It's powered by my own <a href="#Film_API" class="link_to_api">Time Travel Films API</a>.</p>
+                    <img src="img/angular_logo.svg" height="60em" title="Angular">&nbsp;
+                    <img src="img/typescript_logo.svg" height="60mm" title="TypeScript">&nbsp;
+                    <img src="img/sass_logo.svg" height="60mm" title="Sass">&nbsp;
+                    <img src="img/material_logo.svg" height="60mm" title="Angular Material">
+                    <p><a href="https://github.com/Eloi-Perez/movie-Angular-client" target="_blank">See project on
+                            GitHub</a></p>
                 </div>
                 <div class="project-list__item">
-                    <h2><a href="https://eloi-perez.github.io/meet/">Meet App</a></h2>
-                    <p>A Progressive Web Application to show all the events in a calendar.</p>
-                    <p>Developed following a Test-Driven Development approach with React and Jest. Also using serverless functions on AWS Lambda for the authentication with Google as I also use the Google API for the calendar access and Recharts for chart generation.</p>
-                    <p>Hosted using GitHub Pages</p>
-                    <a href="https://github.com/Eloi-Perez/meet">See project on GitHub</a>
+                    <h2>Pokedex App</h2>
+                    <p>A Pokedex Database to access information about the first 151 Pokemon.</p>
+                    <p><a href="#">MORE INFO</a></p>
+                    <img src="img/HTML5_logo.svg" height="60em" title="HTML5">&nbsp;
+                    <img src="img/CSS3_logo.svg" height="60em" title="CSS3">&nbsp;
+                    <img src="img/javascript_logo.svg" height="60em" title="JavaScript">&nbsp;
+                    <img src="img/bootstrap_logo.svg" height="60em" title="Bootstrap 5">
+                    <p><a href="https://github.com/Eloi-Perez/pokedex-app" target="_blank">See project on GitHub</a></p>
                 </div>
-                <!-- <div class="project-list__item">
-                    <h2>Amazing web 5</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis lorem at elit pulvinar,
-                        in fermentum purus tempus. Integer tempus dui at suscipit tempus.<br><br>Pellentesque enim eros,
-                        dictum sed maximus ac, malesuada et velit. Suspendisse elementum pretium mauris, id convallis
-                        justo varius et. Sed eleifend purus sed augue faucibus ultrices. Aenean lectus nulla, porttitor
-                        ac nisl in, tincidunt blandit leo.</p>
-                    <a href="#">See project on GitHub</a>
-                </div> -->
-
+                <div class="project-list__item">
+                    <h2>Phtography Portfolio</h2>
+                    <p>The other side of this website.</p>
+                    <p><a href="#">MORE INFO</a></p>
+                    <img src="img/HTML5_logo.svg" height="60em" title="HTML5">&nbsp;
+                    <img src="img/CSS3_logo.svg" height="60em" title="CSS3">&nbsp;
+                    <img src="img/javascript_logo.svg" height="60em" title="JavaScript">
+                </div>
             </div>
         </div>
     </main>
