@@ -175,7 +175,7 @@
     </main>
 
     <!-- Modals -->
-    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+    <!-- <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
             <div id="modal-container" class="modal__container" role="dialog" aria-modal="true"
                 aria-labelledby="modal-1-title">
@@ -207,8 +207,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <a data-micromodal-trigger="modal-1" href='javascript:void(0);'>Open Modal Dialog</a>
+    </div> -->
+    <!-- <a data-micromodal-trigger="modal-1" href='javascript:void(0);'>Open Modal Dialog</a> -->
 
     <div class="modal micromodal-slide" id="modal-meet" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
@@ -226,14 +226,15 @@
                         Google Calendar API as the source of the app data and a serverless function with AWS Lambda for
                         Authentification with Google.</p>
                     <p>Hosted on <a href="https://eloi-perez.github.io/meet" target="_blank">GitHub Pages</a></p>
-                    <div class="modal__img">
+                    <div class="modal__img_container">
                         <a href="https://eloi-perez.github.io/meet" target="_blank">
-                            <img src="https://raw.githubusercontent.com/Eloi-Perez/meet/assets/meet-app.png">
+                            <img class="modal__img"
+                                src="https://raw.githubusercontent.com/Eloi-Perez/meet/assets/meet-app.png">
                         </a>
                     </div>
                     <br>
                     <h2>Technologies used:</h2>
-                    <div class="modal__img">
+                    <div class="modal__img_container">
                         <img src="img/react_logo.svg" height="60em" title="React">
                         <img src="img/google_cloud_logo.svg" height="60em" title="Google API">
                         <img src="img/aws_logo.svg" height="50em" title="AWS Lambda">&nbsp;&nbsp;
@@ -258,8 +259,9 @@
                     </ul>
                     <br>
                     <h2>Jest tests results:</h2>
-                    <div class="modal__img">
-                        <img src="https://raw.githubusercontent.com/Eloi-Perez/meet/assets/all_test_pass.png">
+                    <div class="modal__img_container">
+                        <img class="modal__img"
+                            src="https://raw.githubusercontent.com/Eloi-Perez/meet/assets/all_test_pass.png">
                     </div>
 
                     <h2>List of features:</h2>
@@ -323,7 +325,7 @@
             <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
                 <header class="modal__header">
                     <h1 class="modal__title" id="modal-1-title">
-                        Meet App
+                        Chat App
                     </h1>
                     <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
                 </header>
@@ -333,15 +335,15 @@
                         test-driven development (TDD),
                         Google Calendar API as the source of the app data and a serverless function with AWS Lambda for
                         Authentification with Google.</p>
-                    <p>Hosted on <a href="https://eloi-perez.github.io/meet" target="_blank">GitHub Pages</a></p>
-                    <div class="modal__img">
-                        <a href="https://eloi-perez.github.io/meet" target="_blank">
-                            <img src="https://github.com/Eloi-Perez/chat-app/raw/assets/chat-app.gif" height="600px">
+                    <div class="modal__img_container">
+                        <a href="#"></a>
+                        <img class="modal__img" src="https://github.com/Eloi-Perez/chat-app/raw/assets/chat-app.gif"
+                            height="600px">
                         </a>
                     </div>
                     <br>
                     <h2>Technologies used:</h2>
-                    <div class="modal__img">
+                    <div class="modal__img_container">
                         <img src="img/react_logo.svg" height="60em" title="React Native">&nbsp;&nbsp;
                         <img src="img/expo_logo.svg" height="60em" title="Expo">&nbsp;&nbsp;
                         <img src="img/firebase_logo.svg" height="60em" title="Google Firebase">
@@ -392,14 +394,14 @@
                         Google Calendar API as the source of the app data and a serverless function with AWS Lambda for
                         Authentification with Google.</p>
                     <p>Hosted on <a href="https://eloi.link" target="_blank">eloi.link</a></p>
-                    <div class="modal__img">
-                        <a href="https://eloi.link" target="_blank">
+                    <div class="modal__img_container">
+                        <a class="modal__img" href="https://eloi.link" target="_blank">
                             <img src="https://raw.githubusercontent.com/Eloi-Perez/eloi.link/assets/eloi.link.png">
                         </a>
                     </div>
                     <br>
                     <h2>Technologies used:</h2>
-                    <div class="modal__img">
+                    <div class="modal__img_container">
                         <img src="img/nodejs_logo.svg" height="60em" title="Node.js">&nbsp;&nbsp;
                         <img src="img/mongodb_logo.svg" height="50em" title="MongoDB">
                     </div>
@@ -450,15 +452,15 @@
                     </p>
                     <p>Hosted on Netlify <a href="https://movie-client2.netlify.app/"
                             target="_blank">movie-client2.netlify.app</a></p>
-                    <div class="modal__img">
+                    <div class="modal__img_container">
                         <a href="https://movie-client2.netlify.app/" target="_blank">
-                            <img
+                            <img class="modal__img"
                                 src="https://raw.githubusercontent.com/Eloi-Perez/movie_client/assets/movie-client.jpg">
                         </a>
                     </div>
                     <br>
                     <h2>Technologies used:</h2>
-                    <div class="modal__img">
+                    <div class="modal__img_container">
                         <img src="img/react_logo.svg" height="60em" title="React">&nbsp;
                         <img src="img/redux_logo.svg" height="60em" title="Redux">&nbsp;
                         <img src="img/bootstrap_logo.svg" height="60em" title="React Bootstrap">
@@ -497,19 +499,19 @@
             <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
                 <header class="modal__header">
                     <h1 class="modal__title" id="modal-1-title">
-                        eloi.link
+                        Time Travel Films API
                     </h1>
                     <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
                 </header>
                 <main class="modal__content" id="modal-1-content">
                     <p>API that serve a films database and users who can favorite and score the films.</p>
-                    <div class="modal__img">
-                        <a href="https://movie-api2.herokuapp.com/docs/" target="_blank"><img
+                    <div class="modal__img_container">
+                        <a href="https://movie-api2.herokuapp.com/docs/" target="_blank"><img class="modal__img"
                                 src="https://raw.githubusercontent.com/Eloi-Perez/movie_api/assets/movie-api.png"></a>
                     </div>
                     <br>
                     <h2>Technologies used:</h2>
-                    <div class="modal__img">
+                    <div class="modal__img_container">
                         <img src="img/nodejs_logo.svg" height="60em" title="Node.js">&nbsp;&nbsp;
                         <img src="img/mongodb_logo.svg" height="50em" title="MongoDB">&nbsp;&nbsp;
                         <img src="img/passport_logo.svg" height="50em" title="Passport.js">&nbsp;&nbsp;
@@ -518,7 +520,7 @@
                     <ul>
                         <li>Node.js</li>
                         <li>Express</li>
-                        <li>Mongoose</li>
+                        <li>Mongoose (MongoDB)</li>
                         <li>Passport</li>
                         <li>bcrypt</li>
                         <li>JSON Web Token (JWT)</li>
@@ -534,7 +536,7 @@
                     <h2>Features:</h2>
                     <ul>
                         <li>Register Users</li>
-                        <li>Send JWT on login and register for authenification</li>
+                        <li>Send JWT on login and registration for authenification</li>
                         <li>Send films data</li>
                         <li>Store favourites films in User</li>
                         You can read the full interactive documentation <a href="https://movie-api2.herokuapp.com/docs/"
@@ -561,13 +563,14 @@
                     <p>This is my first TypeScript and Angular proyect, a films database.</p>
                     <p>Hosted on <a href="https://eloi-perez.github.io/movie-Angular-client/movies"
                             target="_blank">GitHub Pages</a></p>
-                    <div class="modal__img">
-                        <a href="movie-Angular-client" target="_blank"><img
+                    <div class="modal__img_container">
+                        <a href="https://eloi-perez.github.io/movie-Angular-client/movies" target="_blank"><img
+                                class="modal__img"
                                 src="https://raw.githubusercontent.com/Eloi-Perez/movie-Angular-client/assets/movie-Angular-client.jpg"></a>
                     </div>
                     <br>
                     <h2>Technologies used:</h2>
-                    <div class="modal__img">
+                    <div class="modal__img_container">
                         <img src="img/angular_logo.svg" height="60em" title="Angular">&nbsp;&nbsp;
                         <img src="img/typescript_logo.svg" height="60mm" title="TypeScript">&nbsp;&nbsp;
                         <img src="img/sass_logo.svg" height="60mm" title="Sass">&nbsp;&nbsp;
@@ -614,13 +617,13 @@
                     <p>A Pokedex Database to access information about the first 151 Pokemon.</p>
                     <p>Hosted on <a href="https://eloi-perez.github.io/pokedex-app/" target="_blank">GitHub
                             Pages</a></p>
-                    <div class="modal__img">
-                        <a href="https://eloi-perez.github.io/pokedex-app/" target="_blank"><img
+                    <div class="modal__img_container">
+                        <a href="https://eloi-perez.github.io/pokedex-app/" target="_blank"><img class="modal__img"
                                 src="https://raw.githubusercontent.com/Eloi-Perez/pokedex-app/assets/pokedex-app.png"></a>
                     </div>
                     <br>
                     <h2>Technologies used:</h2>
-                    <div class="modal__img">
+                    <div class="modal__img_container">
                         <img src="img/HTML5_logo.svg" height="60em" title="HTML5">&nbsp;
                         <img src="img/CSS3_logo.svg" height="60em" title="CSS3">&nbsp;&nbsp;
                         <img src="img/javascript_logo.svg" height="60em" title="JavaScript">&nbsp;&nbsp;
@@ -665,12 +668,13 @@
                     <p>My photography portfolio</p>
                     <p>Hosted on <a href="https://eloiperez.com/photography/"
                             target="_blank">eloiperez.com/photography</a></p>
-                    <div class="modal__img">
-                        <a href="https://eloiperez.com/photography/" target="_blank"><img src="img/eloi.photo.jpg"></a>
+                    <div class="modal__img_container">
+                        <a href="https://eloiperez.com/photography/" target="_blank"><img class="modal__img"
+                                src="img/eloi.photo.jpg"></a>
                     </div>
                     <br>
                     <h2>Technologies used:</h2>
-                    <div class="modal__img">
+                    <div class="modal__img_container">
                         <img src="img/HTML5_logo.svg" height="60em" title="HTML5">&nbsp;
                         <img src="img/CSS3_logo.svg" height="60em" title="CSS3">&nbsp;&nbsp;
                         <img src="img/javascript_logo.svg" height="60em" title="JavaScript">
@@ -686,7 +690,7 @@
                     <ul>
                         <li>Preloading of images</li>
                         <li>.jpg image optimization with JPEGmini</li>
-                        <li>selective image loading to load .webp instad of .jpg in compatible browsers</li>
+                        <li>Smart image loading to load .webp instad of .jpg in compatible browsers</li>
                     </ul>
                 </main>
             </div>

@@ -233,11 +233,15 @@
     .modal__content {
         -webkit-overflow-scrolling: touch;
     }
+    .modal__img {
+        width: 90vw;
+    }
 }
 
 /* My classes */
 
-.modal__img {
+.modal__img_container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }

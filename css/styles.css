@@ -120,6 +120,40 @@ button:focus {
 
 .skills th {
     padding: 0 50px;
+    border-radius: 10px 10px 0 0;
+    width: 250px;
+}
+.skills thead th {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.3));
+}
+
+/* .skills .table_section {
+    background: linear-gradient(to bottom, rgb(48, 48, 48), rgba(15, 15, 15, 0.5));
+} */
+
+/* .skills tr:nth-child(odd) {
+    background-color: rgb(70, 70, 70);
+}
+.skills tr:nth-child(even) {
+    background-color: rgb(90, 90, 90);
+} */
+.skills tr {
+    background-color: rgb(49, 49, 49);
+}
+.skills .expert {    
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--primary-color));
+    background-size: 90%;
+    background-repeat:no-repeat;
+}
+.skills .intermediate {    
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--primary-color));
+    background-size: 75%;
+    background-repeat:no-repeat;
+}
+.skills .beginner {    
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--primary-color));
+    background-size: 60%;
+    background-repeat:no-repeat;
 }
 
 /* Nav */
@@ -324,13 +358,13 @@ button:active,
 .link_to_api:link,
 #link_to_client:link {
     text-decoration: none;
-    cursor:default;
+    cursor: default;
 }
 
 .link_to_api:visited,
 #link_to_client:visited {
     text-decoration: none;
-    cursor:default;
+    cursor: default;
 }
 
 /* .project-list__item-flex {
