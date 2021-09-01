@@ -15,6 +15,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
     <link rel="stylesheet" type="text/css" href="../normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30491006-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -64,98 +65,633 @@
             <h1>Work</h1>
 
             <div class="project-list">
-                <div class="project-list__item">
-                    <h2>Meet App</h2>
-                    <p>A Progressive Web Application to show all the events in a calendar.</p>
-                    <p><a href="#">MORE INFO</a></p>
-                    <img src="img/react_logo.svg" height="60em" title="React">
-                    <img src="img/google_cloud_logo.svg" height="60em" title="Google API">
-                    <img src="img/aws_logo.svg" height="50em" title="AWS Lambda">&nbsp;
-                    <img src="img/pwa_logo.svg" height="40em" title="Progressive Web Application">&nbsp;
-                    <img src="img/jest_logo.svg" height="60em" title="JestJS">
-                    <img src="img/puppeteer_logo.svg" height="60em" title="Puppeteer">
+                <div class="project-list__item" data-micromodal-trigger="modal-meet">
+                    <div>
+                        <h2>Meet App</h2>
+                        <p>A Progressive Web Application to show all the events in a calendar.</p>
+                        <p><a href="javascript:void(0);">MORE INFO</a></p>
+                        <img src="img/react_logo.svg" height="60em" title="React">
+                        <img src="img/google_cloud_logo.svg" height="60em" title="Google API">
+                        <img src="img/aws_logo.svg" height="50em" title="AWS Lambda">&nbsp;
+                        <img src="img/pwa_logo.svg" height="40em" title="Progressive Web Application">&nbsp;
+                        <img src="img/jest_logo.svg" height="60em" title="JestJS">
+                        <img src="img/puppeteer_logo.svg" height="60em" title="Puppeteer">
+                    </div>
                     <p><a href="https://github.com/Eloi-Perez/meet" target="_blank">See project on GitHub</a></p>
                 </div>
-                <div class="project-list__item">
-                    <h2>Chat App</h2>
-                    <p>A React Native mobile application that give users the oportunity to chat, share pictures and
-                        location.</p>
-                    <p><a href="#">MORE INFO</a></p>
-                    <img src="img/react_logo.svg" height="60em" title="React Native">&nbsp;
-                    <img src="img/expo_logo.svg" height="60em" title="Expo">&nbsp;
-                    <img src="img/firebase_logo.svg" height="60em" title="Google Firebase">
+                <div class="project-list__item" data-micromodal-trigger="modal-chat">
+                    <div>
+                        <h2>Chat App</h2>
+                        <p>A React Native mobile application that give users the oportunity to chat, share pictures and
+                            location.</p>
+                        <p><a href="javascript:void(0);">MORE INFO</a></p>
+                        <img src="img/react_logo.svg" height="60em" title="React Native">&nbsp;
+                        <img src="img/expo_logo.svg" height="60em" title="Expo">&nbsp;
+                        <img src="img/firebase_logo.svg" height="60em" title="Google Firebase">
+                    </div>
                     <p><a href="https://github.com/Eloi-Perez/chat-app" target="_blank">See project on GitHub</a></p>
                 </div>
-                <div class="project-list__item eloilink">
-                    <div class="eloilink__div2">
+                <div class="project-list__item eloilink" data-micromodal-trigger="modal-eloilink">
+                    <div>
                         <h2>eloi.link</h2>
                         <p>An easy to use and fast URL shortener.</p>
-                        <p><a href="#">MORE INFO</a></p>
+                        <p><a href="javascript:void(0);">MORE INFO</a></p>
                         <img src="img/nodejs_logo.svg" height="60em" title="Node.js">&nbsp;
                         <img src="img/mongodb_logo.svg" height="50em" title="MongoDB">
-                        <p><a href="https://github.com/Eloi-Perez/eloi.link" target="_blank">See project on GitHub</a>
-                        </p>
                     </div>
+                    <p><a href="https://github.com/Eloi-Perez/eloi.link" target="_blank">See project on GitHub</a>
+                    </p>
                 </div>
-                <div class="project-list__item Film_Client">
-                    <h2>Time Travel Films Database</h2>
-                    <p>A films database where you can register to show your favourite time travel films and score the
-                        films.</p>
-                    <p><a href="#">MORE INFO</a></p>
-                    <p>It's powered by my own <a href="#Film_API" class="link_to_api">Time Travel Films API</a>.</p>
-                    <img src="img/react_logo.svg" height="60em" title="React">
-                    <img src="img/redux_logo.svg" height="60em" title="Redux">
-                    <img src="img/bootstrap_logo.svg" height="60em" title="React Bootstrap">
+                <div class="project-list__item Film_Client" data-micromodal-trigger="modal-clientR">
+                    <div>
+                        <h2>Time Travel Films Database</h2>
+                        <p>A films database where you can register to show your favourite time travel films and score
+                            the
+                            films.</p>
+                        <p><a href="javascript:void(0);">MORE INFO</a></p>
+                        <p>It's powered by my own <a href="#Film_API" class="link_to_api">Time Travel Films API</a>.</p>
+                        <img src="img/react_logo.svg" height="60em" title="React">
+                        <img src="img/redux_logo.svg" height="60em" title="Redux">
+                        <img src="img/bootstrap_logo.svg" height="60em" title="React Bootstrap">
+                    </div>
                     <p><a href="https://github.com/Eloi-Perez/movie_client" target="_blank">See project on GitHub</a>
                     </p>
                 </div>
-                <div class="project-list__item" id="Film_API">
-                    <h2>Time Travel Films API</h2>
-                    <p>API for the <a href="#Film_Client" id="link_to_client">Time Travel Films Database</a> website.
-                    </p>
-                    <p><a href="#">MORE INFO</a></p>
-                    <img src="img/nodejs_logo.svg" height="60em" title="Node.js">&nbsp;
-                    <img src="img/mongodb_logo.svg" height="50em" title="MongoDB">&nbsp;
-                    <img src="img/passport_logo.svg" height="50em" title="Passport.js">&nbsp;
-                    <img src="img/swagger_logo.svg" height="50em" title="Swagger UI">
+                <div class="project-list__item" id="Film_API" data-micromodal-trigger="modal-api">
+                    <div>
+                        <h2>Time Travel Films API</h2>
+                        <p>API for the <a href="#Film_Client" id="link_to_client">Time Travel Films Database</a>
+                            website.
+                        </p>
+                        <p><a href="javascript:void(0);">MORE INFO</a></p>
+                        <img src="img/nodejs_logo.svg" height="60em" title="Node.js">&nbsp;
+                        <img src="img/mongodb_logo.svg" height="50em" title="MongoDB">&nbsp;
+                        <img src="img/passport_logo.svg" height="50em" title="Passport.js">&nbsp;
+                        <img src="img/swagger_logo.svg" height="50em" title="Swagger UI">
+                    </div>
                     <p><a href="https://github.com/Eloi-Perez/movie_api" target="_blank">See project on GitHub</a></p>
                 </div>
-
-
-                <div class="project-list__item Film_Client">
-                    <h2>Films Database (Angular version)</h2>
-                    <p>A films database where you can register to show your favourite time travel films and score the
-                        films.</p>
-                    <p><a href="#">MORE INFO</a></p>
-                    <p>It's powered by my own <a href="#Film_API" class="link_to_api">Time Travel Films API</a>.</p>
-                    <img src="img/angular_logo.svg" height="60em" title="Angular">&nbsp;
-                    <img src="img/typescript_logo.svg" height="60mm" title="TypeScript">&nbsp;
-                    <img src="img/sass_logo.svg" height="60mm" title="Sass">&nbsp;
-                    <img src="img/material_logo.svg" height="60mm" title="Angular Material">
+                <div class="project-list__item Film_Client" data-micromodal-trigger="modal-clientA">
+                    <div>
+                        <h2>Films Database (Angular version)</h2>
+                        <p>A films database where you can register to show your favourite time travel films and score
+                            the
+                            films.</p>
+                        <p><a href="javascript:void(0);">MORE INFO</a></p>
+                        <p>It's powered by my own <a href="#Film_API" class="link_to_api">Time Travel Films API</a>.</p>
+                        <img src="img/angular_logo.svg" height="60em" title="Angular">&nbsp;
+                        <img src="img/typescript_logo.svg" height="60mm" title="TypeScript">&nbsp;
+                        <img src="img/sass_logo.svg" height="60mm" title="Sass">&nbsp;
+                        <img src="img/material_logo.svg" height="60mm" title="Angular Material">
+                    </div>
                     <p><a href="https://github.com/Eloi-Perez/movie-Angular-client" target="_blank">See project on
                             GitHub</a></p>
                 </div>
-                <div class="project-list__item">
-                    <h2>Pokedex App</h2>
-                    <p>A Pokedex Database to access information about the first 151 Pokemon.</p>
-                    <p><a href="#">MORE INFO</a></p>
-                    <img src="img/HTML5_logo.svg" height="60em" title="HTML5">&nbsp;
-                    <img src="img/CSS3_logo.svg" height="60em" title="CSS3">&nbsp;
-                    <img src="img/javascript_logo.svg" height="60em" title="JavaScript">&nbsp;
-                    <img src="img/bootstrap_logo.svg" height="60em" title="Bootstrap 5">
+                <div class="project-list__item" data-micromodal-trigger="modal-pokedex">
+                    <div>
+                        <h2>Pokedex App</h2>
+                        <p>A Pokedex Database to access information about the first 151 Pokemon.</p>
+                        <p><a href="javascript:void(0);">MORE INFO</a></p>
+                        <img src="img/HTML5_logo.svg" height="60em" title="HTML5">
+                        <img src="img/CSS3_logo.svg" height="60em" title="CSS3">&nbsp;
+                        <img src="img/javascript_logo.svg" height="60em" title="JavaScript">&nbsp;
+                        <img src="img/bootstrap_logo.svg" height="60em" title="Bootstrap 5">
+                    </div>
                     <p><a href="https://github.com/Eloi-Perez/pokedex-app" target="_blank">See project on GitHub</a></p>
                 </div>
-                <div class="project-list__item">
-                    <h2>Phtography Portfolio</h2>
-                    <p>The other side of this website.</p>
-                    <p><a href="#">MORE INFO</a></p>
-                    <img src="img/HTML5_logo.svg" height="60em" title="HTML5">&nbsp;
-                    <img src="img/CSS3_logo.svg" height="60em" title="CSS3">&nbsp;
-                    <img src="img/javascript_logo.svg" height="60em" title="JavaScript">
+                <div class="project-list__item" data-micromodal-trigger="modal-photo">
+                    <div>
+                        <h2>Phtography Portfolio</h2>
+                        <p>The other side of this website.</p>
+                        <p><a href="javascript:void(0);">MORE INFO</a></p>
+                        <img src="img/HTML5_logo.svg" height="60em" title="HTML5">
+                        <img src="img/CSS3_logo.svg" height="60em" title="CSS3">&nbsp;
+                        <img src="img/javascript_logo.svg" height="60em" title="JavaScript">
+                    </div>
+                    <p></p>
                 </div>
             </div>
         </div>
     </main>
+
+    <!-- Modals -->
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div id="modal-container" class="modal__container" role="dialog" aria-modal="true"
+                aria-labelledby="modal-1-title">
+                <header id="modal-header" class="modal__header">
+                    <h2 class="modal__title">
+                        Micromodal
+                    </h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <div id="modal-content-content" class="modal-content-content">
+                    <div id="modal-content" class="modal__content" style="display:none;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <footer id="modal-footer" class="modal__footer">
+                        <button class="modal__btn" data-micromodal-close
+                            aria-label="Close this dialog window">Close</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a data-micromodal-trigger="modal-1" href='javascript:void(0);'>Open Modal Dialog</a>
+
+    <div class="modal micromodal-slide" id="modal-meet" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <h1 class="modal__title" id="modal-1-title">
+                        Meet App
+                    </h1>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <p>A Progressive Web Application to show all the events in a calendar.</p>
+                    <p>Created with the objective of build progressive web application (PWA) with React, using
+                        test-driven development (TDD),
+                        Google Calendar API as the source of the app data and a serverless function with AWS Lambda for
+                        Authentification with Google.</p>
+                    <p>Hosted on <a href="https://eloi-perez.github.io/meet" target="_blank">GitHub Pages</a></p>
+                    <div class="modal__img">
+                        <a href="https://eloi-perez.github.io/meet" target="_blank">
+                            <img src="https://raw.githubusercontent.com/Eloi-Perez/meet/assets/meet-app.png">
+                        </a>
+                    </div>
+                    <br>
+                    <h2>Technologies used:</h2>
+                    <div class="modal__img">
+                        <img src="img/react_logo.svg" height="60em" title="React">
+                        <img src="img/google_cloud_logo.svg" height="60em" title="Google API">
+                        <img src="img/aws_logo.svg" height="50em" title="AWS Lambda">&nbsp;&nbsp;
+                        <img src="img/pwa_logo.svg" height="40em" title="Progressive Web Application">&nbsp;&nbsp;
+                        <img src="img/jest_logo.svg" height="60em" title="JestJS">
+                        <img src="img/puppeteer_logo.svg" height="60em" title="Puppeteer">
+                    </div>
+                    <ul>
+                        <li>React</li>
+                        <li>Axios</li>
+                        <li>Google API</li>
+                        <li>Google Authentication</li>
+                        <li>AWS Lambda</li>
+                        <li>PWA (Progressive Web Application)</li>
+                        <li>Recharts</li>
+                        <li>NProgress.js</li>
+                        <li>Jest</li>
+                        <li>Enzyme</li>
+                        <li>Jest Cucumber (Gherkin scenarios in Jest)</li>
+                        <li>Puppeteer</li>
+                        <li>Atatus</li>
+                    </ul>
+                    <br>
+                    <h2>Jest tests results:</h2>
+                    <div class="modal__img">
+                        <img src="https://raw.githubusercontent.com/Eloi-Perez/meet/assets/all_test_pass.png">
+                    </div>
+
+                    <h2>List of features:</h2>
+                    <ul>
+                        <li>
+                            <h3>Filter events by city</h3>
+                            <p>Scenario: When user hasn’t searched for a city, show upcoming events from all cities
+                                Given user hasn’t searched for any
+                                city When the user opens the app Then the user should see the list of upcoming events.
+                            </p>
+                            <p>Scenario: User should see a list of suggestions when they search for a city Given the
+                                main page is open When the user
+                                starts typing in the city textbox Then the user should receive a list of cities
+                                (suggestions) that match what they’ve
+                                typed.</p>
+                            <p>Scenario: User can select a city from the suggested list Given user was typing “Berlin”
+                                in the city textbox And the list
+                                of suggested cities is showing When the user selects a city (e.g., “Berlin, Germany”)
+                                from the list Then their city
+                                should be changed to that city (i.e., “Berlin, Germany”) And the user should receive a
+                                list of upcoming events in that
+                                city.</p>
+                        </li>
+                        <li>
+                            <h3>Specify number of events</h3>
+                            <p>Scenario: When user hasn’t specified a number, 32 is the default number Given the main
+                                page is open When the user opens
+                                the app Then it should show the first 32 of them.</p>
+                            <p>Scenario: User can change the number of events they want to see Given the main page is
+                                open When the user click on
+                                button and edit it to another number Then it should be shown the quantity of events
+                                specified in button.</p>
+                        </li>
+                        <li>
+                            <h3>Show/hide an event's details</h3>
+                            <p>Scenario: An event element is collapsed by default Given the main page is open When the
+                                user opens the app Then all the
+                                events should be collapsed.</p>
+                            <p>Scenario: User can expand an event to show its details Given a collapsed element When the
+                                user click on the collapsed
+                                element Then the element should expand.</p>
+                            <p>Scenario: User can collapse an event to hide its details Given a expanded element When
+                                the user click on the expanded
+                                element Then the element should collapse.</p>
+                        </li>
+                    </ul>
+                    <br>
+                    <p><a href="https://github.com/Eloi-Perez/meet" target="_blank">See project on GitHub</a></p>
+                </main>
+                <!-- <footer class="modal__footer">
+                    <button class="modal__btn modal__btn-primary">Continue</button>
+                    <button class="modal__btn" data-micromodal-close
+                        aria-label="Close this dialog window">Close</button>
+                </footer> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-chat" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <h1 class="modal__title" id="modal-1-title">
+                        Meet App
+                    </h1>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <p>A Progressive Web Application to show all the events in a calendar.</p>
+                    <p>Created with the objective of build progressive web application (PWA) with React, using
+                        test-driven development (TDD),
+                        Google Calendar API as the source of the app data and a serverless function with AWS Lambda for
+                        Authentification with Google.</p>
+                    <p>Hosted on <a href="https://eloi-perez.github.io/meet" target="_blank">GitHub Pages</a></p>
+                    <div class="modal__img">
+                        <a href="https://eloi-perez.github.io/meet" target="_blank">
+                            <img src="https://github.com/Eloi-Perez/chat-app/raw/assets/chat-app.gif" height="600px">
+                        </a>
+                    </div>
+                    <br>
+                    <h2>Technologies used:</h2>
+                    <div class="modal__img">
+                        <img src="img/react_logo.svg" height="60em" title="React Native">&nbsp;&nbsp;
+                        <img src="img/expo_logo.svg" height="60em" title="Expo">&nbsp;&nbsp;
+                        <img src="img/firebase_logo.svg" height="60em" title="Google Firebase">
+                    </div>
+                    <ul>
+                        <li>React Native</li>
+                        <li>Expo</li>
+                        <li>Gifted Chat UI</li>
+                        <li>Firebase Cloud Firestore</li>
+                        <li>AsyncStorage</li>
+                        <li>NetInfo</li>
+                        <li>Android Studio virtual devices</li>
+                    </ul>
+                    <br>
+                    <h2>Features:</h2>
+                    <ul>
+                        <li>Chat room</li>
+                        <li>Personalize background & name</li>
+                        <li>Anonymous authenification (assign and store users ID)</li>
+                        <li>Remote DB (Firestore Database)</li>
+                        <li>Local DB for offline viewing (AsyncStorage)</li>
+                        <li>useState, AsyncStorage and Firestore synchronization</li>
+                        <li>When offline show status and disable input</li>
+                        <li>When back online, synchronise with remote DB</li>
+                        <li>Sharing location</li>
+                        <li>Sharing image from gallery or camera</li>
+                    </ul>
+                    <br>
+                    <p><a href="https://github.com/Eloi-Perez/chat-app" target="_blank">See project on GitHub</a></p>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-eloilink" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <h1 class="modal__title" id="modal-1-title">
+                        eloi.link
+                    </h1>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <p>An easy to use and fast URL shortener.</p>
+                    <p>Created with the objective of build progressive web application (PWA) with React, using
+                        test-driven development (TDD),
+                        Google Calendar API as the source of the app data and a serverless function with AWS Lambda for
+                        Authentification with Google.</p>
+                    <p>Hosted on <a href="https://eloi.link" target="_blank">eloi.link</a></p>
+                    <div class="modal__img">
+                        <a href="https://eloi.link" target="_blank">
+                            <img src="https://raw.githubusercontent.com/Eloi-Perez/eloi.link/assets/eloi.link.png">
+                        </a>
+                    </div>
+                    <br>
+                    <h2>Technologies used:</h2>
+                    <div class="modal__img">
+                        <img src="img/nodejs_logo.svg" height="60em" title="Node.js">&nbsp;&nbsp;
+                        <img src="img/mongodb_logo.svg" height="50em" title="MongoDB">
+                    </div>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Mongoose (MongoDB)</li>
+                        <li>NanoID</li>
+                        <li>QRcode</li>
+                        <li>JavaScript HTML Template strings
+                            <p>When you request a shorlink, the response HTML is generated dynamically in Node, using
+                                plain JS.</p>
+                            <p>The HTML consists of static code together with nested variables generated outside the
+                                HTML, which also contains scripts to be executed on local using nested variables (e.g. a
+                                Date Object is sent to a script
+                                that the client will execute to convert the time to local time).</p>
+                        </li>
+                    </ul>
+                    <br>
+                    <h2>Features:</h2>
+                    <ul>
+                        <li>Generate short links</li>
+                        <li>Route the short links to the original URLs</li>
+                        <li>Front-end to send the request</li>
+                        <li>Being able to send requests with GET and obtain a response JSON</li>
+                        <li>Generate QR codes in the front-end</li>
+                        <li>Track the number of times a short link is open</li>
+                        <li>Show creation time of the short link</li>
+                    </ul>
+                    <br>
+                    <p><a href="https://github.com/Eloi-Perez/eloi.link" target="_blank">See project on GitHub</a></p>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-clientR" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <h1 class="modal__title" id="modal-1-title">
+                        Time Travel Films Database
+                    </h1>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <p>A React project, using Hooks, Redux for the state management and React-Router for the navigation.
+                    </p>
+                    <p>Hosted on Netlify <a href="https://movie-client2.netlify.app/"
+                            target="_blank">movie-client2.netlify.app</a></p>
+                    <div class="modal__img">
+                        <a href="https://movie-client2.netlify.app/" target="_blank">
+                            <img
+                                src="https://raw.githubusercontent.com/Eloi-Perez/movie_client/assets/movie-client.jpg">
+                        </a>
+                    </div>
+                    <br>
+                    <h2>Technologies used:</h2>
+                    <div class="modal__img">
+                        <img src="img/react_logo.svg" height="60em" title="React">&nbsp;
+                        <img src="img/redux_logo.svg" height="60em" title="Redux">&nbsp;
+                        <img src="img/bootstrap_logo.svg" height="60em" title="React Bootstrap">
+                    </div>
+                    <ul>
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>React-Router</li>
+                        <li>Axios</li>
+                        <li>SCSS</li>
+                        <li>React-Bootstrap</li>
+                        <li>Parcel-Bundler</li>
+                        The site is automatically updated to Netlify and build for production each time that the main
+                        branch of the repository is updated in GitHub.
+                    </ul>
+                    <br>
+                    <h2>Features:</h2>
+                    <ul>
+                        <li>Register Users and login</li>
+                        <li>Keep sesion open with JSON Web Tokens (JWT)</li>
+                        <li>Users can modify or delete their account data</li>
+                        <li>User can access and search a films database</li>
+                        <li>Users can favourite and rate the films</li>
+                        <li>Users can open other users profiles to see their favourite films</li>
+                    </ul>
+                    <br>
+                    <p><a href="https://github.com/Eloi-Perez/movie_client" target="_blank">See project on GitHub</a>
+                    </p>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-api" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <h1 class="modal__title" id="modal-1-title">
+                        eloi.link
+                    </h1>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <p>API that serve a films database and users who can favorite and score the films.</p>
+                    <div class="modal__img">
+                        <a href="https://movie-api2.herokuapp.com/docs/" target="_blank"><img
+                                src="https://raw.githubusercontent.com/Eloi-Perez/movie_api/assets/movie-api.png"></a>
+                    </div>
+                    <br>
+                    <h2>Technologies used:</h2>
+                    <div class="modal__img">
+                        <img src="img/nodejs_logo.svg" height="60em" title="Node.js">&nbsp;&nbsp;
+                        <img src="img/mongodb_logo.svg" height="50em" title="MongoDB">&nbsp;&nbsp;
+                        <img src="img/passport_logo.svg" height="50em" title="Passport.js">&nbsp;&nbsp;
+                        <img src="img/swagger_logo.svg" height="50em" title="Swagger UI">
+                    </div>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Mongoose</li>
+                        <li>Passport</li>
+                        <li>bcrypt</li>
+                        <li>JSON Web Token (JWT)</li>
+                        <li>JSDoc</li>
+                        <li>OpenAPI 3.x</li>
+                        <li>Swagger</li>
+                        <li>Heroku hosting</li>
+                        The <a href="https://movie-api2.herokuapp.com/docs/" target="_blank">documentation</a> is
+                        generated automatically from the JSDoc comments in the code using
+                        swagger-jsdoc and converted to an interactive website with swagger-ui-express.
+                    </ul>
+                    <br>
+                    <h2>Features:</h2>
+                    <ul>
+                        <li>Register Users</li>
+                        <li>Send JWT on login and register for authenification</li>
+                        <li>Send films data</li>
+                        <li>Store favourites films in User</li>
+                        You can read the full interactive documentation <a href="https://movie-api2.herokuapp.com/docs/"
+                            target="_blank">here</a>
+                    </ul>
+                    <br>
+                    <p><a href="https://github.com/Eloi-Perez/movie_api" target="_blank">See project on GitHub</a>
+                    </p>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-clientA" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <h1 class="modal__title" id="modal-1-title">
+                        Films Database (Angular version)
+                    </h1>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <p>This is my first TypeScript and Angular proyect, a films database.</p>
+                    <p>Hosted on <a href="https://eloi-perez.github.io/movie-Angular-client/movies"
+                            target="_blank">GitHub Pages</a></p>
+                    <div class="modal__img">
+                        <a href="movie-Angular-client" target="_blank"><img
+                                src="https://raw.githubusercontent.com/Eloi-Perez/movie-Angular-client/assets/movie-Angular-client.jpg"></a>
+                    </div>
+                    <br>
+                    <h2>Technologies used:</h2>
+                    <div class="modal__img">
+                        <img src="img/angular_logo.svg" height="60em" title="Angular">&nbsp;&nbsp;
+                        <img src="img/typescript_logo.svg" height="60mm" title="TypeScript">&nbsp;&nbsp;
+                        <img src="img/sass_logo.svg" height="60mm" title="Sass">&nbsp;&nbsp;
+                        <img src="img/material_logo.svg" height="60mm" title="Angular Material">
+                    </div>
+                    <ul>
+                        <li>TypeScript</li>
+                        <li>Angular</li>
+                        <li>RxJS</li>
+                        <li>Angular Material</li>
+                        <li>SCSS</li>
+                        <li>TypeDoc</li>
+                        <li>JSDoc</li>
+                    </ul>
+                    <br>
+                    <h2>Features:</h2>
+                    <ul>
+                        <li>Register Users and login</li>
+                        <li>Keep sesion open with JSON Web Tokens (JWT)</li>
+                        <li>Users can modify or delete their account data</li>
+                        <li>User can access and search a films database</li>
+                        <li>Users can favourite films</li>
+                        <li>Users can open other users profiles to see their favourite films</li>
+                    </ul>
+                    <br>
+                    <p><a href="https://github.com/Eloi-Perez/movie-Angular-client" target="_blank">See project on
+                            GitHub</a>
+                    </p>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-pokedex" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <h1 class="modal__title" id="modal-1-title">
+                        Pokedex App
+                    </h1>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <p>A Pokedex Database to access information about the first 151 Pokemon.</p>
+                    <p>Hosted on <a href="https://eloi-perez.github.io/pokedex-app/" target="_blank">GitHub
+                            Pages</a></p>
+                    <div class="modal__img">
+                        <a href="https://eloi-perez.github.io/pokedex-app/" target="_blank"><img
+                                src="https://raw.githubusercontent.com/Eloi-Perez/pokedex-app/assets/pokedex-app.png"></a>
+                    </div>
+                    <br>
+                    <h2>Technologies used:</h2>
+                    <div class="modal__img">
+                        <img src="img/HTML5_logo.svg" height="60em" title="HTML5">&nbsp;
+                        <img src="img/CSS3_logo.svg" height="60em" title="CSS3">&nbsp;&nbsp;
+                        <img src="img/javascript_logo.svg" height="60em" title="JavaScript">&nbsp;&nbsp;
+                        <img src="img/bootstrap_logo.svg" height="60em" title="Bootstrap 5">
+                    </div>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap 5</li>
+                        <li><a href="https://pokeapi.co/" target="_blank">Pokemon API</a></li>
+                        <li>TypeDoc</li>
+                        <li>JSDoc</li>
+                    </ul>
+                    <br>
+                    <h2>Features:</h2>
+                    <ul>
+                        <li>Show all the pokemon of the first generation</li>
+                        <li>Search by number or name</li>
+                        <li>onClick show in a modal the information of the pokemon</li>
+                        <li>Swipe left or right to navigate to the previous or next pokemon</li>
+                    </ul>
+                    <br>
+                    <p><a href="https://github.com/Eloi-Perez/pokedex-app" target="_blank">See project on
+                            GitHub</a>
+                    </p>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-photo" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <h1 class="modal__title" id="modal-1-title">
+                        Phtography Portfolio
+                    </h1>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <p>My photography portfolio</p>
+                    <p>Hosted on <a href="https://eloiperez.com/photography/"
+                            target="_blank">eloiperez.com/photography</a></p>
+                    <div class="modal__img">
+                        <a href="https://eloiperez.com/photography/" target="_blank"><img src="img/eloi.photo.jpg"></a>
+                    </div>
+                    <br>
+                    <h2>Technologies used:</h2>
+                    <div class="modal__img">
+                        <img src="img/HTML5_logo.svg" height="60em" title="HTML5">&nbsp;
+                        <img src="img/CSS3_logo.svg" height="60em" title="CSS3">&nbsp;&nbsp;
+                        <img src="img/javascript_logo.svg" height="60em" title="JavaScript">
+                    </div>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li><a href="https://photoswipe.com/" target="_blank">PhotoSwipe</a></li>
+                    </ul>
+                    <br>
+                    <h2>Features:</h2>
+                    <ul>
+                        <li>Preloading of images</li>
+                        <li>.jpg image optimization with JPEGmini</li>
+                        <li>selective image loading to load .webp instad of .jpg in compatible browsers</li>
+                    </ul>
+                </main>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="center-flexbox foot">
@@ -199,6 +735,7 @@
                 </svg></a>
         </div>
     </footer>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <script src="js/work.scripts.js"></script>
 </body>
 

@@ -5,10 +5,10 @@ font-family: 'Domine', serif;
 */
 
 :root {
-    --primary-color: #6FC3B6;
-    --secondary-color: #E4BC68;
+    --primary-color: #6fc3b6;
+    --secondary-color: #e4bc68;
     --dark-grey: #2b2b2b;
-    --font-color: #E6E6E6;
+    --font-color: #e6e6e6;
     --font-color2: #fff;
     --font-color3: rgb(30, 90, 255);
     --font-color3-35: rgb(30, 90, 255, 0.35);
@@ -20,7 +20,7 @@ font-family: 'Domine', serif;
 
 body {
     background-color: var(--dark-grey);
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -28,8 +28,10 @@ body {
     color: var(--font-color);
 }
 
-h1, h2, h3 {
-    font-family: 'Domine', serif;
+h1,
+h2,
+h3 {
+    font-family: "Domine", serif;
 }
 
 h1 {
@@ -59,7 +61,8 @@ a:visited {
     color: var(--primary-color);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     text-decoration: none;
     color: var(--primary-color);
 }
@@ -81,7 +84,8 @@ button {
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
     cursor: pointer;
     opacity: 0.8;
 }
@@ -161,7 +165,8 @@ button:hover, button:focus {
 
 /* About Button + Form Button */
 
-.button, button {
+.button,
+button {
     /* overwrites browser defaults and border */
     border: none;
     display: inline-block;
@@ -178,13 +183,17 @@ button:hover, button:focus {
     /* property duration timing-function delay */
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
     color: var(--font-color2);
     cursor: pointer;
     opacity: 0.8;
 }
 
-button:active, .button:active {
+button:active,
+.button:active {
     background-color: var(--secondary-color);
     opacity: 1;
 }
@@ -297,16 +306,38 @@ button:active, .button:active {
     width: auto;
     min-height: auto;
     padding: 10px;
+    /* Inside flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-list__item:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.project-list__item h2 a {
+/* .project-list__item h2 a {
     color: var(--font-color3);
     text-decoration: none;
+} */
+
+.link_to_api:link,
+#link_to_client:link {
+    text-decoration: none;
+    cursor:default;
 }
+
+.link_to_api:visited,
+#link_to_client:visited {
+    text-decoration: none;
+    cursor:default;
+}
+
+/* .project-list__item-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
 
 /* #link_api:hover {
     background: red;
