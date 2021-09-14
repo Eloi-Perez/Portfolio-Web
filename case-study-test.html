@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eloi's Web Developer Portfolio</title>
+    <meta name="description" content="Eloi's Web Developer Portfolio">
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30491006-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-30491006-1');
+    </script>
+    <!-- Social Sharing -->
+    <meta property="og:image" content="https://eloiperez.com/external_assets/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="500">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eloiperez.com/">
+    <meta property="og:title" content="Eloi's Portfolio">
+    <meta property="og:description"
+        content="Full-Stack Web Developer and Professional Photographer, Eloi Pérez Aguilar">
+</head>
+
+<body class="body-flex">
+
+    <!-- Menu -->
+    <header class="page-header">
+        <a href="../">
+            <svg id="logo" class="svg-logo" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 815.29 176.73"
+                enable-background="0 0 815.29 176.73" xml:space="preserve" height="43px">
+                <title>Logo</title>
+                <path pathLength="1"
+                    d="M45.88,309.05c1.84,13.22,11.93,18.36,28.09,18.36a61.9,61.9,0,0,0,29.19-7.34v23.31c-10.65,4.22-22.76,6.06-35.06,6.06-31.58,0-55.63-18.54-55.63-50.12s21.48-49.93,51.22-49.93C99.12,249.39,112,274.54,112,303v6.06Zm36.35-18.72c0-11-5.14-20-18.36-20-11.93,0-17.62,9-18.36,20Zm246.36-50.27c10.34,0,16.76-6.24,16.76-15.51S338.94,209,328.59,209s-16.76,6.24-16.76,15.51S318.25,240.06,328.59,240.06Zm-41.14,12.86c-26.21,0-41.07-3.53-52.15-3.53-31.58,0-55.63,18.36-55.63,50.12,0,7.92,1,13.76,3.74,19.94l-27.47.7V220h-33V349.22s31.06-2.72,64.52-2.72c20.28,0,34.31,2.94,47.87,2.94,31.57,0,55.62-18.36,55.62-49.93,0-8-.91-13.44-3.81-20.2l25-1.16v69.09h33V249.39A557,557,0,0,1,287.46,252.92Zm-52.15,73.39c-15.24,0-21.48-12.67-21.48-26.8,0-14.32,6.24-27,21.48-27s21.48,12.67,21.48,27C256.79,313.64,250.54,326.31,235.31,326.31Zm379-56.34h-.37V251.63H583.84v39.24c-.39,32.3-35.37,38.64-48.79,38.64-23.54,0-31.73-11.76-31.73-20.66h66.09v-6.06c0-28.46-12.85-53.61-48.28-53.61-23.12,0-41.25,11.1-48.17,30.88h-1.09c-5.38-16.7-18.45-30.69-38.16-30.69-15.05,0-29,6.06-35.61,19.46h-.37V251.57H367.26v134.2h33v-52h.37c6.24,11.38,18.72,15.6,30.29,15.6,21.41,0,35.33-13.31,40.92-31.94h1.29c7.91,21.06,29.42,34.14,54.84,34.14,29.35,0,50.64-13.4,55.48-21.4h.34v17.05h33V308.33c0-30.55,19.16-32.62,28.73-32.62a55.74,55.74,0,0,0-4.93,23.64c0,31.58,24,50.12,55.63,50.12,12.3,0,24.42-1.84,35.06-6.06V320.09a61.89,61.89,0,0,1-29.19,7.34c-16.16,0-26.25-5.14-28.09-18.36h66.09V303C740.19,216.46,621.35,247.2,614.32,270ZM420.49,324.09c-11,0-20.19-10.46-20.19-24.42,0-14.32,8.08-25,20.19-25,12.85,0,20,11,20,23.68C440.51,313.62,433,324.09,420.49,324.09Zm100.82-54c13.22,0,18.36,9,18.36,20H503C503.69,279.1,509.38,270.1,521.31,270.1Zm152.55,20.25c.73-11,6.43-20,18.36-20,13.22,0,18.36,9,18.36,20ZM783.33,323,827,278V251.56H746.43v24.23h42.78l-43.69,45v26.44h82.24V323ZM554.72,213.19H520.4l-12.48,26.44H531Z"
+                    transform="translate(-12.47 -209.04)" />
+            </svg>
+        </a>
+        <nav class="page-header__item">
+            <ul role="menubar" class="main-navigation navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem"
+                        class="navigation-list__item navigation-list__item--active">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header><br>
+
+
+
+    <div class="modal micromodal-slide is-open" id=case" aria-hidden="false">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <h1 class="modal__title" id="modal-1-title">
+                        Case Study - Time Travel Films Database
+                    </h1>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <div class="modal__img_container">
+                        <img class="modal__img" width="100%" src="img/case_study_full_stack.jpg">
+                    </div>
+                    <br>
+                    <h3>Overview</h3>
+                    <p>Time Travel Films Database is a web application, developed using the MERN stack (MongoDB,
+                        Express, React, Node). After register as an user you can favourite, add to your watch list or
+                        score movies, you can visit the profile of other users and edit your personal data.</p>
+                        <br>
+                    <h3>Purpose & Context</h3>
+                    <p>Time Travel Films Database is a personal project built as part of the Full-Stack Web Development
+                        course at Career Foundry to showcase my skills developing a full-stack JavaScript application.
+                    </p>
+                    <br>
+                    <h3>Objective</h3>
+                    <p>To develop a Full-Stack web application following the MERN stack. Starting in the back-end with
+                        the database and node and the front-end with React.</p>
+                    <br><br>
+                    <h2>Approach</h2>
+                    <p>I started by making a list of the features that I wanted to include in the app.</p>
+                    <ul>
+                        <li>Register users</li>
+                        <li>Login users and keep sesion open with Local Storage and JSON Web Token (JWT)</li>
+                        <li>Users can modify or delete their account data</li>
+                        <li>User can access and search a films database</li>
+                        <li>Users can favourite, add to "plan to watch" and rate the films</li>
+                        <li>Users can open other users profiles to see their favourite films</li>
+                    </ul>
+                    <br>
+                    <h3>Back-end</h3>
+                    <p>Using Node.js I created first the schematics for the MongoDB database linking the different
+                        collections and creating an array of objects in the user for the "myMovies" data. Creating next,
+                        the database in cloud.mongodb.com. Then I wrote all the endpoints with Express which mange all
+                        the requests and supply the data from the database. I used Passport.js for
+                        the user authentication (local and JWT).<br>
+                        And I documented all the endpoints using JSDoc and Swagger. Everything was hosted in Heroku.<br>
+                        For testing I used Postman.<br>
+                        This is the link to the endpoints documentation:
+                        <a href="https://movie-api2.herokuapp.com/docs/">Documentaion</a><br>
+
+                    </p>
+                    <div class="modal__img_container">
+                        <a href="https://movie-api2.herokuapp.com/docs/" target="_blank">
+                            <img class="modal__img" width="800px"
+                                src="https://raw.githubusercontent.com/Eloi-Perez/movie_api/assets/movie-api.png">
+                        </a>
+                    </div>
+                    <br>
+                    <h3>Front-end</h3>
+                    <p>I developed the interface through which users can access the films data by using React and a
+                        basic UI with Bootstrap. I used a combination of React Components, Hooks and Redux to create the
+                        different pages: main-page (show all the movies), registration, login, profile and
+                        movie-details. It's hosted on Netlify <a href="https://movie-client2.netlify.app/"
+                            target="_blank">movie-client2.netlify.app</a>
+                    </p>
+                    <div class="modal__img_container">
+                        <a href="https://movie-client2.netlify.app/" target="_blank">
+                            <img class="modal__img" width="800px" src="img/movie-client.jpg">
+                        </a>
+                    </div>
+                    <h2>Challanges</h2>
+                    <p>I enjoyed building the API and creating the database structure, the documentation was very
+                        challenging as it needs to comply with the OpenAPI Specification and I had to learn YAML syntax,
+                        but it was very fulfilling seeing how professional looks the final result. On the front-end I
+                        really enjoyed the routing on React and it took me a lot of work making Redux works as I needed.
+                    </p>
+                    <br>
+                    <h2>Credits</h2>
+                    <p>Role: Lead Developer<br>
+                        Mentor: Akunna Nwosu</p>
+                </main>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="center-flexbox foot">
+        <p>Find me on:</p>
+        <div>
+            <!-- Github logo -->
+            <a href="https://github.com/Eloi-Perez" target="_blank">
+                <svg class="svg-footer" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"
+                    width="30px" height="30px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>Github</title>
+                    <g>
+                        <path class="st0"
+                            d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z" />
+                    </g>
+                </svg></a>
+            <!-- Twitter logo -->
+            <a href="https://twitter.com/EloiPerez" target="_blank">
+                <svg class="svg-footer" enable-background="new 0 0 56.693 56.693" version="1.1"
+                    viewBox="0 0 56.693 56.693" width="30px" height="30px" xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>Twitter</title>
+                    <path
+                        d="M28.348,5.157c-13.6,0-24.625,11.027-24.625,24.625c0,13.6,11.025,24.623,24.625,24.623c13.6,0,24.623-11.023,24.623-24.623  C52.971,16.184,41.947,5.157,28.348,5.157z M40.752,24.817c0.013,0.266,0.018,0.533,0.018,0.803c0,8.201-6.242,17.656-17.656,17.656  c-3.504,0-6.767-1.027-9.513-2.787c0.486,0.057,0.979,0.086,1.48,0.086c2.908,0,5.584-0.992,7.707-2.656  c-2.715-0.051-5.006-1.846-5.796-4.311c0.378,0.074,0.767,0.111,1.167,0.111c0.566,0,1.114-0.074,1.635-0.217  c-2.84-0.57-4.979-3.08-4.979-6.084c0-0.027,0-0.053,0.001-0.08c0.836,0.465,1.793,0.744,2.811,0.777  c-1.666-1.115-2.761-3.012-2.761-5.166c0-1.137,0.306-2.204,0.84-3.12c3.061,3.754,7.634,6.225,12.792,6.483  c-0.106-0.453-0.161-0.928-0.161-1.414c0-3.426,2.778-6.205,6.206-6.205c1.785,0,3.397,0.754,4.529,1.959  c1.414-0.277,2.742-0.795,3.941-1.506c-0.465,1.45-1.448,2.666-2.73,3.433c1.257-0.15,2.453-0.484,3.565-0.977  C43.018,22.849,41.965,23.942,40.752,24.817z" />
+                </svg></a>
+            <!-- LinkedIn logo -->
+            <a href="https://linkedin.com/in/Eloi-Perez" target="_blank">
+                <svg class="svg-footer" enable-background="new 0 0 56.693 56.693" id="Layer_1" version="1.1"
+                    viewBox="0 0 56.693 56.693" width="30px" height="30px" xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>Linkedin</title>
+                    <g>
+                        <path
+                            d="M28.347,5.155c-13.6,0-24.625,11.025-24.625,24.625c0,13.602,11.025,24.625,24.625,24.625   c13.598,0,24.623-11.023,24.623-24.625C52.97,16.181,41.944,5.155,28.347,5.155z M42.062,41.741c0,1.096-0.91,1.982-2.031,1.982   H16.613c-1.123,0-2.031-0.887-2.031-1.982V18.052c0-1.094,0.908-1.982,2.031-1.982H40.03c1.121,0,2.031,0.889,2.031,1.982V41.741z" />
+                        <path
+                            d="M33.099,26.441c-2.201,0-3.188,1.209-3.74,2.061v0.041h-0.027c0.01-0.012,0.02-0.027,0.027-0.041v-1.768h-4.15   c0.055,1.17,0,12.484,0,12.484h4.15v-6.973c0-0.375,0.027-0.744,0.137-1.012c0.301-0.744,0.984-1.52,2.129-1.52   c1.504,0,2.104,1.146,2.104,2.824v6.68h4.15V32.06C37.878,28.224,35.829,26.441,33.099,26.441z" />
+                        <path
+                            d="M20.864,20.712c-1.419,0-2.349,0.934-2.349,2.159c0,1.197,0.9,2.158,2.294,2.158h0.027c1.447,0,2.348-0.961,2.348-2.158   C23.157,21.646,22.284,20.712,20.864,20.712z" />
+                        <rect height="12.484" width="4.151" x="18.762" y="26.734" />
+                    </g>
+                </svg></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script src="js/work.scripts.js"></script>
+</body>
+
+</html>
