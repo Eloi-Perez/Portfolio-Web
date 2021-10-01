@@ -96,7 +96,7 @@
 }
 
 /**************************\
-  Demo Animation Style
+  Animation Style
 \**************************/
 
 @keyframes mmfadeIn {
@@ -168,6 +168,20 @@
   Custom styles for individual modals
 **************************/
 
+.modal__email_overlay {
+    position: absolute;
+}
+
+.modal__email_container {
+    padding: 15px;
+}
+
+#modal-email-content {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: normal;
+}
+
 /* .modal__container button {
     outline: none;
     cursor: pointer !important;
@@ -235,6 +249,19 @@
     }
     .modal__img {
         width: 90vw;
+    }
+
+    /*Button email modal*/
+    .modal__email_container {
+        width: unset !important;
+        min-width: unset !important;
+        height: unset;
+    }
+    #modal-email-content {
+        text-align: center;
+    }
+    #modal-email-content button:first-child {
+        margin-bottom: 10px;
     }
 }
 
