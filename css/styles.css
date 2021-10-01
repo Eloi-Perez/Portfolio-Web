@@ -99,6 +99,14 @@ button:focus {
     width: 100%;
 }
 
+/* .phone-link {
+    text-decoration: none;
+}
+
+.email-link {
+    cursor: pointer;
+} */
+
 .contact-form {
     background-color: rgba(255, 255, 255, 0.02);
     padding: 20px;
@@ -140,20 +148,20 @@ button:focus {
 .skills tr {
     background-color: rgb(49, 49, 49);
 }
-.skills .expert {    
+.skills .expert {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--primary-color));
     background-size: 90%;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
-.skills .intermediate {    
+.skills .intermediate {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--primary-color));
     background-size: 75%;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
-.skills .beginner {    
+.skills .beginner {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--primary-color));
     background-size: 60%;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
 
 /* Nav */
