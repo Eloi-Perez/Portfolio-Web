@@ -8,7 +8,7 @@ if (hash === '#submitted') {
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         MicroModal.init({
-            awaitCloseAnimation: true,
+            awaitCloseAnimation: false,
             disableFocus: true,
         });
     } catch (e) {
