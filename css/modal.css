@@ -272,3 +272,40 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+/* For Printing*/
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .modal__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: unset;
+        bottom: unset;
+    }
+    .modal__container {
+        max-width: unset;
+        max-height: unset;
+    }
+    .is-open .modal__container * {
+        visibility: visible;
+        overflow: visible !important;
+        background: white;
+        color: black;
+        width: auto;
+        height: unset;
+    }
+    .modal__close {
+        visibility: hidden;
+        display: none;
+    }
+    .modal__img_logos img {
+        height: 50px !important;
+    }
+    .modal__img {
+        width: 100% !important;
+        max-height: 50vh;
+    }
+}

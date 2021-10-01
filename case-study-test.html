@@ -71,35 +71,43 @@
 
 
 
-    <div class="modal micromodal-slide is-open" id=case" aria-hidden="false">
+    <div class="modal micromodal-slide is-open" id=modal-case" aria-hidden="false">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-case-title">
                 <header class="modal__header">
                     <h1 class="modal__title" id="modal-1-title">
                         Case Study - Time Travel Films Database
                     </h1>
                     <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
                 </header>
-                <main class="modal__content" id="modal-1-content">
+                <main class="modal__content" id="modal-case-content">
                     <div class="modal__img_container">
                         <img class="modal__img" width="100%" src="img/case_study_full_stack.jpg">
                     </div>
-                    <br>
-                    <h3>Overview</h3>
+                    <br><br>
+                    <h3>Overview </h3>
                     <p>Time Travel Films Database is a web application, developed using the MERN stack (MongoDB,
-                        Express, React, Node). After register as an user you can favourite, add to your watch list or
-                        score movies, you can visit the profile of other users and edit your personal data.</p>
+                        Express, React, Node). After initial registration a user can add films to 'favourites' or to
+                        'watch list' and score movies. Also, a user can visit the profile of other users plus the option
+                        to edit their own personal data.
+                    </p>
                     <br>
                     <h3>Purpose & Context</h3>
                     <p>Time Travel Films Database is a personal project built as part of the Full-Stack Web Development
                         course at Career Foundry to showcase my skills developing a full-stack JavaScript application.
+                        The idea comes from my love of time travel films and the difficulty to find new films to watch.
+                        The purpose was to create a database with every time-travel-related film, so other people can
+                        create their own list of films to watch from this genre.
                     </p>
                     <br>
-                    <h3>Objective</h3>
-                    <p>To develop a Full-Stack web application following the MERN stack. Starting in the back-end with
-                        the database and node and the front-end with React.</p>
+                    <h3 class="print-break">Objective</h3>
+                    <p>On the technical part: To develop a Full-Stack web application following the MERN stack. Starting
+                        in the back-end with the database and node and the front-end with React.<br>
+                        On the functional side: To create an easy to use website where users can log in and discover
+                        films.
+                    </p>
                     <br><br>
-                    <h2>Approach</h2>
+                    <h2 class="print-break">Approach</h2>
                     <p>I started by making a list of the features that I wanted to include in the app.</p>
                     <ul>
                         <li>Register users</li>
@@ -111,28 +119,29 @@
                     </ul>
                     <br>
                     <h3>Back-end</h3>
-                    <p>Using Node.js I created first the schematics for the MongoDB database linking the different
-                        collections and creating an array of objects in the user for the "myMovies" data. Creating next,
-                        the database in cloud.mongodb.com. Then I wrote all the endpoints with Express which mange all
-                        the requests and supply the data from the database. I used Passport.js for
+                    <p>Using Node.js I created first the schematics for the MongoDB database linking the
+                        different collections and creating an array of objects in the user for the "myMovies" data.
+                        Creating next, the database in cloud.mongodb.com. Then I wrote all the endpoints with Express
+                        which mange all the requests and supply the data from the database. I used Passport.js for
                         the user authentication (local and JWT).<br>
-                        And I documented all the endpoints using JSDoc and Swagger. Everything was hosted in Heroku.<br>
+                        I documented all the endpoints using JSDoc and Swagger. Everything was hosted in
+                        Heroku.<br>
                         Also, for testing I used Postman.<br>
                         <a href="https://movie-api2.herokuapp.com/docs/">This is the link to the endpoints
-                            documentation</a><br>
-
+                            documentation</a>
                     </p>
+                    <br>
                     <div class="modal__img_container">
                         <a href="https://movie-api2.herokuapp.com/docs/" target="_blank">
                             <img class="modal__img" width="800px"
                                 src="https://raw.githubusercontent.com/Eloi-Perez/movie_api/assets/movie-api.png">
                         </a>
                     </div>
-                    <br>
+                    <br><br>
                     <h3>Front-end</h3>
                     <p>I developed the interface where users can access the films data by using React and a
-                        basic UI with Bootstrap. I used a combination of React Components, Hooks and Redux to create the
-                        different pages: main-page, registration, login, profile and
+                        basic UI with Bootstrap. I used a combination of React Components, Hooks and Redux to
+                        create the different pages: main-page, registration, login, profile and
                         movie-details. It's hosted on Netlify <a href="https://movie-client2.netlify.app/"
                             target="_blank">movie-client2.netlify.app</a>
                     </p>
@@ -141,17 +150,26 @@
                             <img class="modal__img" width="800px" src="img/movie-client.jpg">
                         </a>
                     </div>
-                    <h2>Challanges</h2>
-                    <p>I enjoyed building the API and creating the database structure, the documentation was very
-                        challenging as it needs to comply with the OpenAPI Specification and I had to learn YAML syntax
-                        for it, but it was very fulfilling seeing how professional looks the final result. On the
-                        front-end I really enjoyed the routing on React and it took me a lot of work making Redux works
-                        as I needed, but it was well worth it learning, as I understand now how powerful tool is Redux.
+                    <br><br>
+                    <h2>Challenges</h2>
+                    <p>I enjoyed building the API and creating the database structure. The documentation was
+                        very challenging as it needed to comply with the OpenAPI Specification. I had to learn
+                        YAML syntax as part of this process, but it was fulfilling to see how professional the
+                        final result looked once complete. On the front-end I really enjoyed the routing on
+                        React and it took me a lot of work making Redux work as I needed it to. In the end, it
+                        was well worth learning how powerful a tool like Redux can be.
+                    </p>
+                    <br>
+                    <h2>Future Steps</h2>
+                    <p>I'd like to improve the UI, add more films to the database and provide tools to the users so
+                        they can upload new films to the database, together with a system where trusted users can
+                        approve the uploads.
                     </p>
                     <br>
                     <h2>Credits</h2>
                     <p>Role: Lead Developer<br>
-                        Mentor: Akunna Nwosu</p>
+                        Mentor: Akunna Nwosu
+                    </p>
                 </main>
             </div>
         </div>
