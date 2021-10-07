@@ -476,6 +476,10 @@ button:active,
     .project-list__item {
         padding: 5px;
     }
+    .margin-mobile {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
 
 @media all and (max-width: 564px) {
@@ -503,6 +507,10 @@ button:active,
     }
     .center-flexbox__item {
         max-width: 100vw;
+    }
+    .profile {
+        margin-left: 5px;
+        margin-right: 5px;
     }
     .project-list {
         grid-gap: 10px;
