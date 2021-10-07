@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     try {
         MicroModal.init({
             awaitCloseAnimation: true,
+            disableFocus: true,
         });
     } catch (e) {
         console.log("micromodal error: ", e);
