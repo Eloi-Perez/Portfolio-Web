@@ -92,8 +92,8 @@
                 <div class="project-list__item" data-micromodal-trigger="modal-chat">
                     <div>
                         <h2>Chat App</h2>
-                        <p>A React Native mobile application that give users the opportunity to chat, share pictures and
-                            location.</p>
+                        <p>A React Native mobile application that gives users the opportunity to chat, share pictures
+                            and locations.</p>
                         <p><a href="javascript:void(0);">See project details</a></p>
                         <img src="img/react_logo.svg" height="60em" title="React Native">&nbsp;
                         <img src="img/expo_logo.svg" height="60em" title="Expo">&nbsp;
@@ -124,6 +124,7 @@
                         <img src="img/redux_logo.svg" height="60em" title="Redux">
                         <img src="img/bootstrap_logo.svg" height="60em" title="React Bootstrap">
                     </div>
+                    <!-- <p><a href="javascript:void(0);" data-micromodal-trigger="modal-case" data-micromodal-close>Case Study of the Full-Stack App</a></p> -->
                     <p><a href="https://github.com/Eloi-Perez/movie_client" target="_blank">See project on GitHub</a>
                     </p>
                 </div>
@@ -139,6 +140,7 @@
                         <img src="img/passport_logo.svg" height="50em" title="Passport.js">&nbsp;
                         <img src="img/swagger_logo.svg" height="50em" title="Swagger UI">
                     </div>
+                    <!-- <p><a href="javascript:void(0);" data-micromodal-trigger="modal-case">Case Study of the Full-Stack App</a></p> -->
                     <p><a href="https://github.com/Eloi-Perez/movie_api" target="_blank">See project on GitHub</a></p>
                 </div>
                 <div class="project-list__item Film_Client" data-micromodal-trigger="modal-clientA">
@@ -197,10 +199,9 @@
                 </header>
                 <main class="modal__content" id="modal-meet-content">
                     <p>A Progressive Web Application to show all the events in a calendar.</p>
-                    <p>Created with the objective of build progressive web application (PWA) with React, using
-                        test-driven development (TDD),
-                        Google Calendar API as the source of the app data and a serverless function with AWS Lambda for
-                        Authentication with Google.</p>
+                    <p>Created with the objective of build a progressive web application (PWA) with React, using
+                        test-driven development (TDD), Google Calendar API as the source of the app data and a
+                        serverless function with AWS Lambda for Authentication with Google.</p>
                     <p>Hosted on <a href="https://eloi-perez.github.io/meet" target="_blank">GitHub Pages</a></p>
                     <div class="modal__img_container">
                         <a href="https://eloi-perez.github.io/meet" target="_blank">
@@ -244,43 +245,33 @@
                         <li>
                             <h3>Filter events by city</h3>
                             <p>Scenario: When user hasn’t searched for a city, show upcoming events from all cities
-                                Given user hasn’t searched for any
-                                city When the user opens the app Then the user should see the list of upcoming events.
-                            </p>
+                                Given user hasn’t searched for any city When the user opens the app Then the user should
+                                see the list of upcoming events.</p>
                             <p>Scenario: User should see a list of suggestions when they search for a city Given the
-                                main page is open When the user
-                                starts typing in the city textbox Then the user should receive a list of cities
-                                (suggestions) that match what they’ve
-                                typed.</p>
+                                main page is open When the user starts typing in the city textbox Then the user should
+                                receive a list of cities (suggestions) that match what they’ve typed.</p>
                             <p>Scenario: User can select a city from the suggested list Given user was typing “Berlin”
-                                in the city textbox And the list
-                                of suggested cities is showing When the user selects a city (e.g., “Berlin, Germany”)
-                                from the list Then their city
-                                should be changed to that city (i.e., “Berlin, Germany”) And the user should receive a
-                                list of upcoming events in that
-                                city.</p>
+                                in the city textbox And the list of suggested cities is showing When the user selects a
+                                city (e.g., “Berlin, Germany”) from the list Then their city should be changed to that
+                                city (i.e., “Berlin, Germany”) And the user should receive a list of upcoming events in
+                                that city.</p>
                         </li>
                         <li>
                             <h3>Specify number of events</h3>
                             <p>Scenario: When user hasn’t specified a number, 32 is the default number Given the main
-                                page is open When the user opens
-                                the app Then it should show the first 32 of them.</p>
+                                page is open When the user opens the app Then it should show the first 32 of them.</p>
                             <p>Scenario: User can change the number of events they want to see Given the main page is
-                                open When the user click on
-                                button and edit it to another number Then it should be shown the quantity of events
-                                specified in button.</p>
+                                open When the user click on button and edit it to another number Then it should be shown
+                                the quantity of events specified in button.</p>
                         </li>
                         <li>
                             <h3>Show/hide an event's details</h3>
                             <p>Scenario: An event element is collapsed by default Given the main page is open When the
-                                user opens the app Then all the
-                                events should be collapsed.</p>
+                                user opens the app Then all the events should be collapsed.</p>
                             <p>Scenario: User can expand an event to show its details Given a collapsed element When the
-                                user click on the collapsed
-                                element Then the element should expand.</p>
+                                user click on the collapsed element Then the element should expand.</p>
                             <p>Scenario: User can collapse an event to hide its details Given a expanded element When
-                                the user click on the expanded
-                                element Then the element should collapse.</p>
+                                the user click on the expanded element Then the element should collapse.</p>
                         </li>
                     </ul>
                     <br>
@@ -300,8 +291,8 @@
                     <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
                 </header>
                 <main class="modal__content" id="modal-chat-content">
-                    <p>A React Native mobile application that give users the opportunity to chat, share pictures and
-                        location.</p>
+                    <p>A React Native mobile application that gives users the opportunity to chat, share pictures and
+                        locations.</p>
                     <div class="modal__img_container">
                         <a href="#"></a>
                         <img class="modal__img" src="https://github.com/Eloi-Perez/chat-app/raw/assets/chat-app.gif"
@@ -380,8 +371,8 @@
                                 plain JS.</p>
                             <p>The HTML consists of static code together with nested variables generated outside the
                                 HTML, which also contains scripts to be executed on local using nested variables (e.g. a
-                                Date Object is sent to a script
-                                that the client will execute to convert the time to local time).</p>
+                                Date Object is sent to a script that the client will execute to convert the time to
+                                local time).</p>
                         </li>
                     </ul>
                     <br>
@@ -414,6 +405,8 @@
                 <main class="modal__content" id="modal-clientR-content">
                     <p>A React project, using Hooks, Redux for the state management and React-Router for the navigation.
                     </p>
+                    <p><a href="javascript:void(0);" data-micromodal-trigger="modal-case" data-micromodal-close>Case
+                            Study of the Full-Stack App</a></p>
                     <p>Hosted on Netlify <a href="https://movie-client2.netlify.app/"
                             target="_blank">movie-client2.netlify.app</a></p>
                     <div class="modal__img_container">
@@ -451,6 +444,8 @@
                         <li>Users can open other users profiles to see their favourite films</li>
                     </ul>
                     <br>
+                    <p><a href="javascript:void(0);" data-micromodal-trigger="modal-case" data-micromodal-close>Case
+                            Study of the Full-Stack App</a></p>
                     <p><a href="https://github.com/Eloi-Perez/movie_client" target="_blank">See project on GitHub</a>
                     </p>
                 </main>
@@ -469,6 +464,8 @@
                 </header>
                 <main class="modal__content" id="modal-api-content">
                     <p>API that serve a films database and users who can favorite and score the films.</p>
+                    <p><a href="javascript:void(0);" data-micromodal-trigger="modal-case" data-micromodal-close>Case Study of the Full-Stack
+                            App</a></p>
                     <div class="modal__img_container modal__img_logos">
                         <a href="https://movie-api2.herokuapp.com/docs/" target="_blank"><img class="modal__img"
                                 src="https://raw.githubusercontent.com/Eloi-Perez/movie_api/assets/movie-api.png"></a>
@@ -507,6 +504,9 @@
                             target="_blank">here</a>
                     </ul>
                     <br>
+                    <p><a href="javascript:void(0);" data-micromodal-trigger="modal-case" data-micromodal-close>Case
+                            Study of the Full-Stack
+                            App</a></p>
                     <p><a href="https://github.com/Eloi-Perez/movie_api" target="_blank">See project on GitHub</a>
                     </p>
                 </main>
@@ -654,6 +654,110 @@
                         <li>.jpg image optimization with JPEGmini</li>
                         <li>Smart image loading to load .webp instad of .jpg in compatible browsers</li>
                     </ul>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-case" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-case-title">
+                <header class="modal__header">
+                    <h1 class="modal__title" id="modal-1-title">
+                        Case Study - Time Travel Films Database
+                    </h1>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-case-content">
+                    <div class="modal__img_container">
+                        <img class="modal__img" width="100%" src="img/case_study_full_stack.jpg">
+                    </div>
+                    <br><br>
+                    <h3>Overview </h3>
+                    <p>Time Travel Films Database is a web application, developed using the MERN stack (MongoDB,
+                        Express, React, Node). After initial registration a user can add films to 'favourites' or to
+                        'watch list' and score movies. Also, a user can visit the profile of other users plus the option
+                        to edit their own personal data.
+                    </p>
+                    <br>
+                    <h3>Purpose & Context</h3>
+                    <p>Time Travel Films Database is a personal project built as part of the Full-Stack Web Development
+                        course at Career Foundry to showcase my skills developing a full-stack JavaScript application.
+                        The idea comes from my love of time travel films and the difficulty to find new films to watch.
+                        The purpose was to create a database with every time-travel-related film, so other people can
+                        create their own list of films to watch from this genre.
+                    </p>
+                    <br>
+                    <h3 class="print-break">Objective</h3>
+                    <p>On the technical part: To develop a Full-Stack web application following the MERN stack. Starting
+                        in the back-end with the database and node and the front-end with React.<br>
+                        On the functional side: To create an easy to use website where users can log in and discover
+                        films.
+                    </p>
+                    <br><br>
+                    <h2 class="print-break">Approach</h2>
+                    <p>I started by making a list of the features that I wanted to include in the app.</p>
+                    <ul>
+                        <li>Register users</li>
+                        <li>Login users and keep sesion open with Local Storage and JSON Web Token (JWT)</li>
+                        <li>Users can modify or delete their account data</li>
+                        <li>User can access and search a films database</li>
+                        <li>Users can favourite, add to "plan to watch" and rate the films</li>
+                        <li>Users can open other users profiles to see their favourite films</li>
+                    </ul>
+                    <br>
+                    <h3>Back-end</h3>
+                    <p>Using Node.js I created first the schematics for the MongoDB database linking the
+                        different collections and creating an array of objects in the user for the "myMovies" data.
+                        Creating next, the database in cloud.mongodb.com. Then I wrote all the endpoints with Express
+                        which mange all the requests and supply the data from the database. I used Passport.js for
+                        the user authentication (local and JWT).<br>
+                        I documented all the endpoints using JSDoc and Swagger. Everything was hosted in
+                        Heroku.<br>
+                        Also, for testing I used Postman.<br>
+                        <a href="https://movie-api2.herokuapp.com/docs/">This is the link to the endpoints
+                            documentation</a>
+                    </p>
+                    <br>
+                    <div class="modal__img_container">
+                        <a href="https://movie-api2.herokuapp.com/docs/" target="_blank">
+                            <img class="modal__img" width="800px"
+                                src="https://raw.githubusercontent.com/Eloi-Perez/movie_api/assets/movie-api.png">
+                        </a>
+                    </div>
+                    <br><br>
+                    <h3>Front-end</h3>
+                    <p>I developed the interface where users can access the films data by using React and a
+                        basic UI with Bootstrap. I used a combination of React Components, Hooks and Redux to
+                        create the different pages: main-page, registration, login, profile and
+                        movie-details. It's hosted on Netlify <a href="https://movie-client2.netlify.app/"
+                            target="_blank">movie-client2.netlify.app</a>
+                    </p>
+                    <div class="modal__img_container">
+                        <a href="https://movie-client2.netlify.app/" target="_blank">
+                            <img class="modal__img" width="800px" src="img/movie-client.jpg">
+                        </a>
+                    </div>
+                    <br><br>
+                    <h2>Challenges</h2>
+                    <p>I enjoyed building the API and creating the database structure. The documentation was
+                        very challenging as it needed to comply with the OpenAPI Specification. I had to learn
+                        YAML syntax as part of this process, but it was fulfilling to see how professional the
+                        final result looked once complete. On the front-end I really enjoyed the routing on
+                        React and it took me a lot of work making Redux work as I needed it to. In the end, it
+                        was well worth learning how powerful a tool like Redux can be.
+                    </p>
+                    <br>
+                    <h2>Future Steps</h2>
+                    <p>I'd like to improve the UI, add more films to the database and provide tools to the users so
+                        they can upload new films to the database, together with a system where trusted users can
+                        approve the uploads.
+                    </p>
+                    <br>
+                    <h2>Credits</h2>
+                    <p>Role: Lead Developer<br>
+                        Mentor: Akunna Nwosu
+                    </p>
                 </main>
             </div>
         </div>
