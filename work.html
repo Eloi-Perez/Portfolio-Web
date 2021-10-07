@@ -78,7 +78,7 @@
                 <div class="project-list__item" data-micromodal-trigger="modal-meet">
                     <div>
                         <h2>Meet App</h2>
-                        <p>A Progressive Web Application to show all the events in a calendar.</p>
+                        <p>A Progressive Web Application to show all the events from a calendar.</p>
                         <p><a href="javascript:void(0);">See project details</a></p>
                         <img src="img/react_logo.svg" height="60em" title="React">
                         <img src="img/google_cloud_logo.svg" height="60em" title="Google API">
@@ -198,7 +198,8 @@
                     <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
                 </header>
                 <main class="modal__content" id="modal-meet-content">
-                    <p>A Progressive Web Application to show all the events in a calendar.</p>
+                    <p>A Progressive Web Application to show all the events from a calendar in a list format, where you
+                        can search events by city.</p>
                     <p>Created with the objective of build a progressive web application (PWA) with React, using
                         test-driven development (TDD), Google Calendar API as the source of the app data and a
                         serverless function with AWS Lambda for Authentication with Google.</p>
@@ -244,34 +245,63 @@
                     <ul>
                         <li>
                             <h3>Filter events by city</h3>
-                            <p>Scenario: When user hasn’t searched for a city, show upcoming events from all cities
-                                Given user hasn’t searched for any city When the user opens the app Then the user should
-                                see the list of upcoming events.</p>
-                            <p>Scenario: User should see a list of suggestions when they search for a city Given the
-                                main page is open When the user starts typing in the city textbox Then the user should
-                                receive a list of cities (suggestions) that match what they’ve typed.</p>
-                            <p>Scenario: User can select a city from the suggested list Given user was typing “Berlin”
-                                in the city textbox And the list of suggested cities is showing When the user selects a
-                                city (e.g., “Berlin, Germany”) from the list Then their city should be changed to that
-                                city (i.e., “Berlin, Germany”) And the user should receive a list of upcoming events in
-                                that city.</p>
+                            <p>Scenario: When user hasn’t searched for a city, show upcoming events from all cities</p>
+                            <ul>
+                                <li>Given user hasn’t searched for any city</li>
+                                <li>When the user opens the app </li>
+                                <li>Then the user should see the list of upcoming events</li>
+                            </ul>
+                            <p>Scenario: User should see a list of suggestions when they search for a city</p>
+                            <ul>
+                                <li>Given the main page is open</li>
+                                <li>When the user starts typing in the city textbox</li>
+                                <li>Then the user should receive a list of cities (suggestions) that match what they’ve
+                                    typed</li>
+                            </ul>
+                            <p>Scenario: User can select a city from the suggested list</p>
+                            <ul>
+                                <li>Given user was typing “Berlin” in the city textbox And the list of suggested cities
+                                    is showing</li>
+                                <li>When the user selects a city (e.g., “Berlin, Germany”) from the list</li>
+                                <li>Then their city should be changed to that city (i.e., “Berlin, Germany”) And the
+                                    user should receive a list of upcoming events in that city</li>
+                            </ul>
                         </li>
                         <li>
                             <h3>Specify number of events</h3>
-                            <p>Scenario: When user hasn’t specified a number, 32 is the default number Given the main
-                                page is open When the user opens the app Then it should show the first 32 of them.</p>
-                            <p>Scenario: User can change the number of events they want to see Given the main page is
-                                open When the user click on button and edit it to another number Then it should be shown
-                                the quantity of events specified in button.</p>
+                            <p>Scenario: When user hasn’t specified a number, 32 is the default number</p>
+                            <ul>
+                                <li>Given the main page is open</li>
+                                <li>When the user opens the app</li>
+                                <li>Then it should show the first 32 of them</li>
+                            </ul>
+                            <p>Scenario: User can change the number of events they want to see</p>
+                            <ul>
+                                <li>Given the main page is open</li>
+                                <li>When the user click on button and edit it to another number </li>
+                                <li>Then it should be shown the quantity of events specified in button</li>
+                            </ul>
                         </li>
                         <li>
                             <h3>Show/hide an event's details</h3>
-                            <p>Scenario: An event element is collapsed by default Given the main page is open When the
-                                user opens the app Then all the events should be collapsed.</p>
-                            <p>Scenario: User can expand an event to show its details Given a collapsed element When the
-                                user click on the collapsed element Then the element should expand.</p>
-                            <p>Scenario: User can collapse an event to hide its details Given a expanded element When
-                                the user click on the expanded element Then the element should collapse.</p>
+                            <p>Scenario: An event element is collapsed by default</p>
+                            <ul>
+                                <li>Given the main page is open</li>
+                                <li>When the user opens the app</li>
+                                <li>Then all the events should be collapsed</li>
+                            </ul>
+                            <p>Scenario: User can expand an event to show its details</p>
+                            <ul>
+                                <li>Given a collapsed element</li>
+                                <li>When the user click on the collapsed element</li>
+                                <li>Then the element should expand</li>
+                            </ul>
+                            <p>Scenario: User can collapse an event to hide its details</p>
+                            <ul>
+                                <li>Given a expanded element</li>
+                                <li>When the user click on the expanded element</li>
+                                <li>Then the element should collapse</li>
+                            </ul>
                         </li>
                     </ul>
                     <br>
@@ -319,8 +349,8 @@
                     <h2>Features:</h2>
                     <ul>
                         <li>Chat room</li>
-                        <li>Personalize background & name</li>
-                        <li>Anonymous authenification (assign and store users ID)</li>
+                        <li>Personalise background & name</li>
+                        <li>Anonymous authentication (assign and store user's ID)</li>
                         <li>Remote DB (Firestore Database)</li>
                         <li>Local DB for offline viewing (AsyncStorage)</li>
                         <li>useState, AsyncStorage and Firestore synchronization</li>
@@ -383,7 +413,7 @@
                         <li>Front-end to send the request</li>
                         <li>Being able to send requests with GET and obtain a response JSON</li>
                         <li>Generate QR codes in the front-end</li>
-                        <li>Track the number of times a short link is open</li>
+                        <li>Track the number of times a short link is opened</li>
                         <li>Show creation time of the short link</li>
                     </ul>
                     <br>
@@ -430,18 +460,18 @@
                         <li>SCSS</li>
                         <li>React-Bootstrap</li>
                         <li>Parcel-Bundler</li>
-                        The site is automatically updated to Netlify and build for production each time that the main
+                        The site is automatically updated to Netlify and builds for production each time that the main
                         branch of the repository is updated in GitHub.
                     </ul>
                     <br>
                     <h2>Features:</h2>
                     <ul>
-                        <li>Register Users and login</li>
-                        <li>Keep sesion open with JSON Web Tokens (JWT)</li>
+                        <li>Register users and login</li>
+                        <li>Keep session open with JSON Web Tokens (JWT)</li>
                         <li>Users can modify or delete their account data</li>
-                        <li>User can access and search a films database</li>
-                        <li>Users can favourite and rate the films</li>
-                        <li>Users can open other users profiles to see their favourite films</li>
+                        <li>Users can access and search a films database</li>
+                        <li>Users can rate the films and add to favourites</li>
+                        <li>Users can open other user's profiles to see their favourite films</li>
                     </ul>
                     <br>
                     <p><a href="javascript:void(0);" data-micromodal-trigger="modal-case" data-micromodal-close>Case
@@ -463,8 +493,10 @@
                     <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
                 </header>
                 <main class="modal__content" id="modal-api-content">
-                    <p>API that serve a films database and users who can favorite and score the films.</p>
-                    <p><a href="javascript:void(0);" data-micromodal-trigger="modal-case" data-micromodal-close>Case Study of the Full-Stack
+                    <p>API that serves a films and users database, where favourites films and scores can be added to
+                        user's data.</p>
+                    <p><a href="javascript:void(0);" data-micromodal-trigger="modal-case" data-micromodal-close>Case
+                            Study of the Full-Stack
                             App</a></p>
                     <div class="modal__img_container modal__img_logos">
                         <a href="https://movie-api2.herokuapp.com/docs/" target="_blank"><img class="modal__img"
@@ -496,10 +528,10 @@
                     <br>
                     <h2>Features:</h2>
                     <ul>
-                        <li>Register Users</li>
-                        <li>Send JWT on login and registration for authenification</li>
+                        <li>Register users</li>
+                        <li>Send JWT on login and registration for authentication</li>
                         <li>Send films data</li>
-                        <li>Store favourites films in User</li>
+                        <li>Store favourites films in user</li>
                         You can read the full interactive documentation <a href="https://movie-api2.herokuapp.com/docs/"
                             target="_blank">here</a>
                     </ul>
@@ -524,7 +556,7 @@
                     <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
                 </header>
                 <main class="modal__content" id="modal-clientA-content">
-                    <p>This is my first TypeScript and Angular proyect, a films database.</p>
+                    <p>This is my first TypeScript and Angular project, a films database.</p>
                     <p>Hosted on <a href="https://eloi-perez.github.io/movie-Angular-client/movies"
                             target="_blank">GitHub Pages</a></p>
                     <div class="modal__img_container">
@@ -552,12 +584,12 @@
                     <br>
                     <h2>Features:</h2>
                     <ul>
-                        <li>Register Users and login</li>
-                        <li>Keep sesion open with JSON Web Tokens (JWT)</li>
+                        <li>Register users and login</li>
+                        <li>Keep session open with JSON Web Tokens (JWT)</li>
                         <li>Users can modify or delete their account data</li>
-                        <li>User can access and search a films database</li>
-                        <li>Users can favourite films</li>
-                        <li>Users can open other users profiles to see their favourite films</li>
+                        <li>Users can access and search a films database</li>
+                        <li>Users can add films to favourites</li>
+                        <li>Users can open other user's profiles to see their favourite films</li>
                     </ul>
                     <br>
                     <p><a href="https://github.com/Eloi-Perez/movie-Angular-client" target="_blank">See project on
