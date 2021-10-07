@@ -145,23 +145,42 @@ button:focus {
 .skills tr:nth-child(even) {
     background-color: rgb(90, 90, 90);
 } */
+
 .skills tr {
     background-color: rgb(49, 49, 49);
 }
 .skills .expert {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--primary-color));
-    background-size: 90%;
+    background-size: 90% 100%;
     background-repeat: no-repeat;
 }
 .skills .intermediate {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--primary-color));
-    background-size: 75%;
+    background-size: 75% 100%;
     background-repeat: no-repeat;
 }
 .skills .beginner {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--primary-color));
-    background-size: 60%;
+    background-size: 60% 100%;
     background-repeat: no-repeat;
+}
+
+/* Safari 11+ */
+@media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+        .skills tr {
+            background-attachment: fixed;
+        }
+        .skills .expert {
+            background-size: 70% 100%;
+        }
+        .skills .intermediate {
+            background-size: 63% 100%;
+        }
+        .skills .beginner {
+            background-size: 56% 100%;
+        }
+    }
 }
 
 /* Nav */
