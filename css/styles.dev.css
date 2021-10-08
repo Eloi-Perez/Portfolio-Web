@@ -203,18 +203,8 @@ button:focus {
     stroke-width: 3;
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
-    -webkit-animation: drawLogo 2.5s forwards;
-            animation: drawLogo 2.5s forwards;
+    animation: drawLogo 2.5s forwards;
     fill-opacity: 0;
-}
-
-@-webkit-keyframes drawLogo {
-    from {
-        stroke-dashoffset: 1;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
 }
 
 @keyframes drawLogo {
@@ -458,15 +448,6 @@ button:active,
 
 /* animation */
 
-@-webkit-keyframes line-move {
-    from {
-        transform: translate(-40%, 0%);
-    }
-    to {
-        transform: translate(100%, 0%);
-    }
-}
-
 @keyframes line-move {
     from {
         transform: translate(-40%, 0%);
@@ -477,8 +458,7 @@ button:active,
 }
 
 .city-lines {
-    -webkit-animation: 16s line-move infinite alternate linear;
-            animation: 16s line-move infinite alternate linear;
+    animation: 16s line-move infinite alternate linear;
 }
 
 /* @media */
