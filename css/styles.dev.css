@@ -467,6 +467,7 @@ button:active,
     .profile__portrait {
         float: unset;
         width: 60vw;
+        max-width: 280px;
         margin: 0 auto;
     }
     .project-list {
