@@ -334,6 +334,11 @@ button:active,
     border-radius: 50%;
 }
 
+.profile__portrait-about {
+    height: auto;
+    border-radius: 50%;
+}
+
 /* Grid Work*/
 
 /* start grid fallback */
@@ -469,6 +474,10 @@ button:active,
         width: 60vw;
         max-width: 280px;
         margin: 0 auto;
+    }
+    .profile__portrait-about {
+        width: 60vw;
+        max-width: 280px;
     }
     .project-list {
         grid-template-columns: 1fr;
