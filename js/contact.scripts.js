@@ -4,6 +4,12 @@ if (hash === '#submitted') {
     document.querySelector('.submitted').classList.remove('hidden');
 }
 
+//Test for spam
+const submit = document.querySelector('#submit-button');
+const submitHtml = '<input type="submit" value="Send message" class="button">';
+submit.insertAdjacentHTML('beforeend', submitHtml);
+
+
 //Modal
 document.addEventListener('DOMContentLoaded', async () => {
     try {
