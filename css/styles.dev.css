@@ -130,7 +130,6 @@ button:active,
     opacity: 1;
 }
 
-
 /* Nav */
 
 .navigation-list {
@@ -193,7 +192,6 @@ button:active,
     display: inline-block;
     margin-left: 15px;
 }
-
 
 /* Flex index about Footer */
 
@@ -300,7 +298,6 @@ button:active,
     background: var(--font-color3-35);
 }
 
-
 /* About*/
 
 .profile__portrait-about {
@@ -368,11 +365,17 @@ button:active,
     }
 }
 
-
 /* Contact Form */
 
 #contact-textarea {
     width: 100%;
+}
+
+.at {
+    fill: var(--primary-color);
+    height: 0.9em;
+    width: 1em;
+    transform: translateY(0.15em);
 }
 
 /* .phone-link {
@@ -400,7 +403,6 @@ button:active,
     display: none;
 }
 
-
 /* animation */
 
 @keyframes line-move {
@@ -415,7 +417,6 @@ button:active,
 .city-lines {
     animation: 16s line-move infinite alternate linear;
 }
-
 
 /* @media */
 

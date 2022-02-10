@@ -173,7 +173,8 @@
 }
 
 .modal__email_container {
-    padding: 15px;
+    padding: 0;
+    background: none;
 }
 
 #modal-email-content {
